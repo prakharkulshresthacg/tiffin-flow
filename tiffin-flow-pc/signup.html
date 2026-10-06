@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Your Account — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: var(--color-bg);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <div class="header-actions">
+        <span style="font-size: 0.9rem; color: var(--color-text-muted);">Already registered?</span>
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Auth Split Screen Layout -->
+  <main class="auth-wrapper">
+    
+    <!-- Left Hero Illustration Panel -->
+    <div class="auth-hero-panel">
+      <div>
+        <span class="section-badge" style="background: rgba(255, 255, 255, 0.15); color: #FFAE85;">
+          Join 2,000+ Happy Foodies
+        </span>
+        <h2 style="font-family: var(--font-serif-display); font-size: 3rem; line-height: 1.15; margin: 16px 0 20px;">
+          Build a meal plan <br><em style="color: #FFAE85;">that fits your life.</em>
+        </h2>
+        <p style="color: #D1DFDA; font-size: 1.15rem; line-height: 1.6; max-width: 440px;">
+          Say goodbye to grocery runs, greasy takeout, and plastic containers. Step into the future of everyday dining.
+        </p>
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 14px; background: rgba(255, 255, 255, 0.08); padding: 24px; border-radius: var(--radius-lg); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="color: #FFAE85; font-size: 1.2rem;">✓</span>
+          <span style="color: #E2EAE6; font-size: 0.92rem;">Skip meals anytime with instant ₹85 wallet refunds</span>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="color: #FFAE85; font-size: 1.2rem;">✓</span>
+          <span style="color: #E2EAE6; font-size: 0.92rem;">100% Reusable stainless-steel insulated dabbas</span>
+        </div>
+        <div style="display: flex; gap: 12px; align-items: center;">
+          <span style="color: #FFAE85; font-size: 1.2rem;">✓</span>
+          <span style="color: #E2EAE6; font-size: 0.92rem;">Cooked fresh by verified local domestic home chefs</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Signup Form Panel -->
+    <div class="auth-form-panel" style="padding: 40px 60px;">
+      <div style="margin-bottom: 24px;">
+        <span style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent);">
+          CREATE ACCOUNT
+        </span>
+        <h1 style="font-family: var(--font-serif-display); font-size: 2.2rem; color: var(--color-primary-dark); margin: 6px 0 8px;">
+          Create your account
+        </h1>
+        <p style="font-size: 0.92rem; color: var(--color-text-muted);">
+          Start your journey with wholesome everyday food.
+        </p>
+      </div>
+
+      <form action="plans.html" method="get">
+        <div class="grid-2" style="gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" for="reg-name">Full name</label>
+            <input type="text" id="reg-name" class="form-input" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-email">Email address</label>
+            <input type="email" id="reg-email" class="form-input" placeholder="you@example.com" required>
+          </div>
+        </div>
+
+        <div class="grid-2" style="gap: 16px;">
+          <div class="form-group">
+            <label class="form-label" for="reg-phone">Phone number</label>
+            <input type="tel" id="reg-phone" class="form-input" placeholder="+91 98765 00000" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="reg-pass">Password</label>
+            <input type="password" id="reg-pass" class="form-input" placeholder="Create a secure password" required>
+          </div>
+        </div>
+
+        <!-- Dietary Chips -->
+        <div class="form-group">
+          <label class="form-label">Initial Food Preference</label>
+          <div class="chip-group">
+            <div class="chip-option">
+              <input type="radio" name="diet" id="s-veg" checked>
+              <label for="s-veg">🌱 Pure Veg</label>
+            </div>
+            <div class="chip-option">
+              <input type="radio" name="diet" id="s-nonveg">
+              <label for="s-nonveg">🍗 Non-Veg</label>
+            </div>
+            <div class="chip-option">
+              <input type="radio" name="diet" id="s-jain">
+              <label for="s-jain">🌿 Jain</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- Preferred Slots -->
+        <div class="form-group">
+          <label class="form-label">Primary Meal Slot</label>
+          <div class="chip-group">
+            <div class="chip-option">
+              <input type="radio" name="slot" id="s-lunch" checked>
+              <label for="s-lunch">☀️ Lunch</label>
+            </div>
+            <div class="chip-option">
+              <input type="radio" name="slot" id="s-dinner">
+              <label for="s-dinner">🌙 Dinner</label>
+            </div>
+            <div class="chip-option">
+              <input type="radio" name="slot" id="s-both">
+              <label for="s-both">🍽️ Both</label>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 24px; font-size: 0.85rem; color: var(--color-text-muted);">
+          <label style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;">
+            <input type="checkbox" checked style="margin-top: 3px; accent-color: var(--color-accent);">
+            <span>I agree to TiffinFlow's Terms of Service, Refund Policy and Reusable Dabba Deposit Guidelines.</span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 20px;">
+          Create Account & Choose Plan →
+        </button>
+
+        <div style="text-align: center; font-size: 0.9rem; color: var(--color-text-muted); padding-top: 16px; border-top: 1px solid var(--color-border);">
+          Already have an account? <a href="login.html" style="font-weight: 700; color: var(--color-accent);">Sign in</a>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html>

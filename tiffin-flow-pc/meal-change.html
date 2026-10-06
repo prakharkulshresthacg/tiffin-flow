@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Update & Options — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: var(--color-bg);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a href="subscription.html" class="btn btn-outline btn-sm">← Back to Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-narrow" style="padding-top: 60px; padding-bottom: 80px;">
+    <div class="card" style="padding: 46px 40px; max-width: 680px; margin: 0 auto; border-top: 6px solid var(--color-accent);">
+      <span class="section-badge" style="background: var(--color-accent-light); color: var(--color-accent-dark);">
+        Today's Meal Update
+      </span>
+
+      <h1 class="section-title" style="margin-bottom: 8px; font-size: 2.2rem;">
+        Today's meal has <em>changed</em>
+      </h1>
+
+      <p class="section-subtitle" style="font-size: 0.95rem; margin-bottom: 24px;">
+        We believe in 100% transparency. Fresh ingredients for the scheduled special dish did not meet our home chef's quality audit this morning.
+      </p>
+
+      <div style="background: #FFFDF9; border: 1.5px solid #FCD34D; border-radius: var(--radius-md); padding: 18px 22px; margin-bottom: 28px;">
+        <div style="font-weight: 700; color: #92400E; font-size: 0.95rem;">
+          Original Scheduled Dish: Paneer Tikka Thali
+        </div>
+        <div style="font-size: 0.85rem; color: #B45309; margin-top: 2px;">
+          Reason: Dairy mandi morning supply did not meet our fresh organic grade.
+        </div>
+      </div>
+
+      <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark); margin-bottom: 16px;">
+        We never auto-replace without your choice. Pick what works best:
+      </h3>
+
+      <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+        
+        <!-- Option 1: Swap Rajma -->
+        <div style="border: 1.5px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; display: flex; justify-content: space-between; align-items: center; background: var(--color-surface);">
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 800; color: var(--color-accent); text-transform: uppercase;">OPTION 1: POPULAR SWAP</div>
+            <h4 style="font-family: var(--font-serif-heading); font-size: 1.15rem; color: var(--color-primary-dark); margin: 2px 0;">
+              Dilli-Style Rajma Chawal Bowl
+            </h4>
+            <div style="font-size: 0.82rem; color: var(--color-text-muted);">Slow cooked kidney beans, jeera basmati rice & salad</div>
+          </div>
+          <a href="subscription.html" class="btn btn-primary btn-sm">Choose Dish →</a>
+        </div>
+
+        <!-- Option 2: Swap Dal Tadka -->
+        <div style="border: 1.5px solid var(--color-border); border-radius: var(--radius-md); padding: 20px; display: flex; justify-content: space-between; align-items: center; background: var(--color-surface);">
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 800; color: var(--color-primary); text-transform: uppercase;">OPTION 2: COMFORT CLASSIC</div>
+            <h4 style="font-family: var(--font-serif-heading); font-size: 1.15rem; color: var(--color-primary-dark); margin: 2px 0;">
+              Dhaba Dal Tadka Thali
+            </h4>
+            <div style="font-size: 0.82rem; color: var(--color-text-muted);">Double tempered yellow dal, 3 phulkas, jeera aloo & rice</div>
+          </div>
+          <a href="subscription.html" class="btn btn-outline btn-sm">Choose Dish →</a>
+        </div>
+
+        <!-- Option 3: Take ₹85 Credit -->
+        <div style="border: 1.5px solid var(--color-success); border-radius: var(--radius-md); padding: 20px; display: flex; justify-content: space-between; align-items: center; background: #F0FDF4;">
+          <div>
+            <div style="font-size: 0.75rem; font-weight: 800; color: var(--color-success); text-transform: uppercase;">OPTION 3: INSTANT WALLET REFUND</div>
+            <h4 style="font-family: var(--font-serif-heading); font-size: 1.15rem; color: #14532D; margin: 2px 0;">
+              Receive ₹85 Meal Credit
+            </h4>
+            <div style="font-size: 0.82rem; color: #166534;">Skip today's lunch entirely and receive instant wallet cash</div>
+          </div>
+          <a href="skipped.html" class="btn btn-outline btn-sm" style="border-color: var(--color-success); color: var(--color-success);">Take ₹85 Credit →</a>
+        </div>
+
+      </div>
+
+      <div style="font-size: 0.82rem; color: var(--color-text-light); text-align: center;">
+        Your choice is confirmed instantly without re-entering address or payment details.
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>

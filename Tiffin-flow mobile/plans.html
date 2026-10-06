@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Plan - TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .plan-card {
+      background: var(--white);
+      border: 1.5px solid var(--border-color);
+      border-radius: 20px;
+      padding: 22px 18px;
+      margin-bottom: 18px;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+    .plan-card.popular {
+      border-color: var(--accent-orange);
+      box-shadow: 0 10px 30px rgba(239, 106, 50, 0.14);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      right: 18px;
+      background: var(--accent-orange);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      padding: 4px 12px;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(239, 106, 50, 0.3);
+    }
+    .plan-tier-name {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--primary-green-light);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 6px;
+    }
+    .plan-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 6px;
+    }
+    .plan-price {
+      font-family: var(--font-heading);
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--primary-green);
+      line-height: 1;
+    }
+    .plan-duration {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .plan-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+    .plan-features-list {
+      list-style: none;
+      border-top: 1px solid var(--border-light);
+      padding-top: 14px;
+      margin-bottom: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .plan-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 13px;
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+    .plan-check {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background: var(--primary-green-pale);
+      color: var(--primary-green);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      font-size: 12px;
+    }
+    .compare-table th, .compare-table td {
+      padding: 10px 12px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .compare-table th:first-child, .compare-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+      color: var(--primary-green);
+    }
+    .compare-table th {
+      background: var(--bg-cream);
+      font-weight: 800;
+      color: var(--primary-green);
+    }
+    .check-icon {
+      color: var(--primary-green-light);
+      font-weight: 800;
+    }
+    .dash-icon {
+      color: var(--text-subtle);
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="index.html" class="icon-btn bordered" title="Back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+      <div style="width: 38px;"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-content">
+      <div style="margin-bottom: 20px;">
+        <h1 class="page-title">Choose your plan</h1>
+        <p class="page-subtitle">Pick what fits your routine. You can skip, pause or upgrade anytime.</p>
+      </div>
+
+      <!-- Plan 1: Basic -->
+      <div class="plan-card">
+        <div class="plan-tier-name">Basic</div>
+        <div class="plan-price-row">
+          <span class="plan-price">₹599</span>
+          <span class="plan-duration">/ 7 meals</span>
+        </div>
+        <p class="plan-desc">Best for trying TiffinFlow</p>
+
+        <ul class="plan-features-list">
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>7 wholesome home-style meals</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Skip up to 2 meals with 100% refund credit</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Reusable stainless-steel tiffin delivered hot</span>
+          </li>
+        </ul>
+
+        <a href="customize.html" class="btn btn-secondary">Choose Basic</a>
+      </div>
+
+      <!-- Plan 2: Standard Flex (MOST POPULAR) -->
+      <div class="plan-card popular">
+        <div class="popular-tag">MOST POPULAR</div>
+        <div class="plan-tier-name" style="color: var(--accent-orange-dark);">Standard Flex</div>
+        <div class="plan-price-row">
+          <span class="plan-price">₹1,149</span>
+          <span class="plan-duration">/ 15 meals</span>
+        </div>
+        <p class="plan-desc">Made for flexible routines</p>
+
+        <ul class="plan-features-list">
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>15 flexible home-style meals</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Skip or swap meals anytime before cutoff</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Pause plan when traveling (zero loss)</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Includes Weekend Special Thali options</span>
+          </li>
+        </ul>
+
+        <a href="customize.html" class="btn btn-primary">Choose Standard</a>
+      </div>
+
+      <!-- Plan 3: Premium -->
+      <div class="plan-card">
+        <div class="plan-tier-name">Premium</div>
+        <div class="plan-price-row">
+          <span class="plan-price">₹1,999</span>
+          <span class="plan-duration">/ 30 meals</span>
+        </div>
+        <p class="plan-desc">Complete monthly comfort</p>
+
+        <ul class="plan-features-list">
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>30 full meals for the whole month</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Pause, extend & rollover days indefinitely</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Priority delivery slot selection</span>
+          </li>
+          <li class="plan-feature-item">
+            <span class="plan-check"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg></span>
+            <span>Dedicated concierge kitchen manager</span>
+          </li>
+        </ul>
+
+        <a href="customize.html" class="btn btn-forest">Choose Premium</a>
+      </div>
+
+      <!-- Comparison Matrix -->
+      <div style="margin-top: 12px; margin-bottom: 24px;">
+        <h3 class="section-title" style="font-size: 16px;">Compare plans</h3>
+        <p style="font-size: 12px; color: var(--text-muted); margin-bottom: 12px;">Every plan comes with home-style meals and reusable steel tiffins.</p>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Basic</th>
+              <th>Standard</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Meals</td>
+              <td>7</td>
+              <td>15</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Skip meals</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+            </tr>
+            <tr>
+              <td>Swap dishes</td>
+              <td class="dash-icon">—</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+            </tr>
+            <tr>
+              <td>Pause plan</td>
+              <td class="dash-icon">—</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+            </tr>
+            <tr>
+              <td>Extend plan</td>
+              <td class="dash-icon">—</td>
+              <td class="dash-icon">—</td>
+              <td class="check-icon">✓</td>
+            </tr>
+            <tr>
+              <td>Home-style</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+            </tr>
+            <tr>
+              <td>Steel tiffin</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+              <td class="check-icon">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="plans.html" class="nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        <span>Plans</span>
+      </a>
+      <a href="weekly-menu.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        </svg>
+        <span>Menu</span>
+      </a>
+      <a href="subscription.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>My Plan</span>
+      </a>
+      <a href="login.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Account</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

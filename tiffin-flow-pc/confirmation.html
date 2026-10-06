@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Confirmed — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link">Weekly Menu</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="subscription.html" class="btn btn-primary btn-sm">My Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Multi-Step Stepper -->
+  <div class="container">
+    <div class="stepper-nav">
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Select Plan</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Customize</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Checkout</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step active">
+        <div class="stepper-num">✓</div>
+        <span>Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation Main Card -->
+  <main class="container-narrow" style="padding-bottom: 80px;">
+    
+    <!-- Success Hero -->
+    <div class="card" style="text-align: center; padding: 50px 40px; margin-bottom: 30px; border-top: 6px solid var(--color-success);">
+      <div style="width: 72px; height: 72px; background: var(--color-success-bg); color: var(--color-success); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.2rem; margin: 0 auto 20px;">
+        ✓
+      </div>
+
+      <span class="section-badge" style="background: var(--color-success-bg); color: var(--color-success);">
+        Subscription Confirmed
+      </span>
+
+      <h1 class="section-title" style="margin-bottom: 12px;">
+        Your tiffin is on its <em>way!</em>
+      </h1>
+
+      <p class="section-subtitle" style="margin-bottom: 28px;">
+        Thanks, <strong>Aarav</strong>! Your <strong>Standard Flex Plan</strong> is now active. Annapurna Home Kitchen has been assigned to prepare your meals fresh with care.
+      </p>
+
+      <div style="background: var(--color-surface-muted); border-radius: var(--radius-lg); padding: 24px; max-width: 600px; margin: 0 auto 30px; border: 1px solid var(--color-border); text-align: left;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; padding-bottom: 12px; border-bottom: 1px solid var(--color-border-subtle);">
+          <span style="font-size: 0.85rem; color: var(--color-text-light); font-weight: 600;">ORDER REFERENCE</span>
+          <strong style="font-family: var(--font-accent); color: var(--color-primary); font-size: 1.1rem;">#TF-071026-184</strong>
+        </div>
+
+        <div class="grid-2" style="gap: 16px;">
+          <div>
+            <div style="font-size: 0.78rem; color: var(--color-text-light); text-transform: uppercase; font-weight: 600;">First Delivery Date</div>
+            <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 1rem;">Wednesday, October 7</div>
+            <div style="font-size: 0.85rem; color: var(--color-text-muted);">Lunch Slot (12:30 PM – 2:00 PM)</div>
+          </div>
+
+          <div>
+            <div style="font-size: 0.78rem; color: var(--color-text-light); text-transform: uppercase; font-weight: 600;">Assigned Kitchen Partner</div>
+            <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 1rem;">Annapurna Home Kitchen</div>
+            <div style="font-size: 0.85rem; color: var(--color-success); font-weight: 600;">⭐ 4.8 / 5 (Verified Home Chef)</div>
+          </div>
+        </div>
+
+        <div style="margin-top: 16px; padding-top: 14px; border-top: 1px solid var(--color-border-subtle);">
+          <div style="font-size: 0.78rem; color: var(--color-text-light); text-transform: uppercase; font-weight: 600;">Delivery Address</div>
+          <div style="font-size: 0.9rem; color: var(--color-text-muted);">Flat 402, Maple Residency, 12th Main Road, Indiranagar, Bengaluru — 560038</div>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+        <a href="subscription.html" class="btn btn-primary btn-lg">Go to My Dashboard →</a>
+        <a href="build-week.html" class="btn btn-outline btn-lg">Plan This Week's Meals</a>
+      </div>
+    </div>
+
+    <!-- What Happens Next Strip -->
+    <div class="card" style="padding: 36px;">
+      <h3 style="font-family: var(--font-serif-heading); font-size: 1.4rem; color: var(--color-primary-dark); margin-bottom: 24px;">
+        What happens next?
+      </h3>
+
+      <div class="grid-3" style="gap: 24px;">
+        <div style="border-left: 3px solid var(--color-accent); padding-left: 16px;">
+          <div style="font-weight: 800; color: var(--color-accent); font-size: 0.85rem; margin-bottom: 4px;">STEP 1</div>
+          <h4 style="font-weight: 700; color: var(--color-primary-dark); margin-bottom: 4px;">Kitchen Prepares Fresh</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+            Ingredients are cut and cooked fresh 90 minutes before dispatch with cold-pressed oil and real spices.
+          </p>
+        </div>
+
+        <div style="border-left: 3px solid var(--color-accent); padding-left: 16px;">
+          <div style="font-weight: 800; color: var(--color-accent); font-size: 0.85rem; margin-bottom: 4px;">STEP 2</div>
+          <h4 style="font-weight: 700; color: var(--color-primary-dark); margin-bottom: 4px;">Packed in Stainless Steel</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+            Packed in sanitized reusable steel dabbas that keep food piping hot without single-use plastics.
+          </p>
+        </div>
+
+        <div style="border-left: 3px solid var(--color-accent); padding-left: 16px;">
+          <div style="font-weight: 800; color: var(--color-accent); font-size: 0.85rem; margin-bottom: 4px;">STEP 3</div>
+          <h4 style="font-weight: 700; color: var(--color-primary-dark); margin-bottom: 4px;">Doorstep Handover & Swap</h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted);">
+            Delivered between 12:30–2:00 PM. Hand over your empty dabba on next day's delivery.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>Need help? <a href="help.html" style="text-decoration: underline; color: #FFAE85;">Visit Help Center</a></div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

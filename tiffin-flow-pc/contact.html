@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link">Weekly Menu</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="plans.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section style="padding: 60px 0 30px; text-align: center;">
+    <div class="container-narrow">
+      <span class="section-badge">We Are Here For You</span>
+      <h1 class="section-title">
+        How can we <em>help?</em>
+      </h1>
+      <p class="section-subtitle">
+        Whether you have questions about your meal schedule, wallet credits, kitchen partnerships, or corporate bulk orders, our support crew is just a message away.
+      </p>
+    </div>
+  </section>
+
+  <!-- 3 Support Channel Cards -->
+  <div class="container" style="margin-bottom: 50px;">
+    <div class="grid-3">
+      <div class="card" style="padding: 30px; text-align: center;">
+        <div style="font-size: 2.2rem; margin-bottom: 12px;">✉️</div>
+        <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark); margin-bottom: 6px;">Customer Support</h3>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 16px;">
+          For subscriptions, cancellations, and delivery inquiries.
+        </p>
+        <a href="mailto:support@tiffinflow.in" style="font-weight: 700; color: var(--color-accent); font-size: 0.95rem;">
+          support@tiffinflow.in
+        </a>
+        <div style="font-size: 0.78rem; color: var(--color-text-light); margin-top: 4px;">Available 9 AM – 9 PM Daily</div>
+      </div>
+
+      <div class="card" style="padding: 30px; text-align: center; border-color: var(--color-accent);">
+        <div style="font-size: 2.2rem; margin-bottom: 12px;">📞</div>
+        <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark); margin-bottom: 6px;">Call Us Directly</h3>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 16px;">
+          For urgent delivery timing or address changes.
+        </p>
+        <a href="tel:+919876543210" style="font-weight: 700; color: var(--color-primary); font-size: 1.05rem;">
+          +91 98765 43210
+        </a>
+        <div style="font-size: 0.78rem; color: var(--color-text-light); margin-top: 4px;">Mon – Sun | 9 AM – 9 PM</div>
+      </div>
+
+      <div class="card" style="padding: 30px; text-align: center;">
+        <div style="font-size: 2.2rem; margin-bottom: 12px;">👩‍🍳</div>
+        <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark); margin-bottom: 6px;">Kitchen Partnerships</h3>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 16px;">
+          Are you a home chef looking to cook for your neighborhood?
+        </p>
+        <a href="mailto:partners@tiffinflow.in" style="font-weight: 700; color: var(--color-accent); font-size: 0.95rem;">
+          partners@tiffinflow.in
+        </a>
+        <div style="font-size: 0.78rem; color: var(--color-text-light); margin-top: 4px;">Home Chef Onboarding Team</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form & City Hubs Container -->
+  <main class="container" style="padding-bottom: 80px;">
+    <div class="grid-2" style="grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: start;">
+      
+      <!-- Contact Form -->
+      <div class="card" style="padding: 40px;">
+        <h3 style="font-family: var(--font-serif-heading); font-size: 1.5rem; color: var(--color-primary-dark); margin-bottom: 8px;">
+          Send us a message
+        </h3>
+        <p style="font-size: 0.9rem; color: var(--color-text-muted); margin-bottom: 24px;">
+          We typically get back to you within 2 hours.
+        </p>
+
+        <form action="#" method="get">
+          <div class="grid-2" style="gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="c-name">Full Name</label>
+              <input type="text" id="c-name" class="form-input" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-email">Email Address</label>
+              <input type="email" id="c-email" class="form-input" placeholder="you@example.com" required>
+            </div>
+          </div>
+
+          <div class="grid-2" style="gap: 16px;">
+            <div class="form-group">
+              <label class="form-label" for="c-phone">Phone Number</label>
+              <input type="tel" id="c-phone" class="form-input" placeholder="+91 98765 00000">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="c-topic">Topic</label>
+              <select id="c-topic" class="form-select">
+                <option>Meal Subscription Questions</option>
+                <option>Delivery Delay or Address Change</option>
+                <option>Wallet & Credits Inquiry</option>
+                <option>Home Kitchen Partner Program</option>
+                <option>Corporate Office Meal Plans</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="c-msg">Your Message</label>
+            <textarea id="c-msg" class="form-textarea" placeholder="Tell us what you need help with..." rows="4" required></textarea>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-lg" style="width: 100%;">
+            Send Message →
+          </button>
+        </form>
+      </div>
+
+      <!-- City Kitchen Clusters -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="card" style="padding: 30px; background: var(--color-primary-subtle); border-color: rgba(23, 63, 53, 0.15);">
+          <h3 style="font-family: var(--font-serif-heading); font-size: 1.35rem; color: var(--color-primary-dark); margin-bottom: 12px;">
+            Our Operating Kitchen Hubs
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 20px;">
+            We operate in dense neighborhood clusters to ensure your dabbas arrive fresh and steaming hot within 20 minutes of cooking.
+          </p>
+
+          <div style="display: flex; flex-direction: column; gap: 14px; font-size: 0.9rem;">
+            <div>
+              <strong style="color: var(--color-primary);">Bengaluru:</strong>
+              <div style="color: var(--color-text-muted); font-size: 0.82rem;">Indiranagar • Koramangala • HSR Layout • Whitefield • BTM</div>
+            </div>
+            <div>
+              <strong style="color: var(--color-primary);">Delhi-NCR:</strong>
+              <div style="color: var(--color-text-muted); font-size: 0.82rem;">South Extension • Hauz Khas • Cyber City Gurgaon • Noida Sec 62</div>
+            </div>
+            <div>
+              <strong style="color: var(--color-primary);">Mumbai:</strong>
+              <div style="color: var(--color-text-muted); font-size: 0.82rem;">Bandra West • Powai Hiranandani • Andheri East • Dadar</div>
+            </div>
+            <div>
+              <strong style="color: var(--color-primary);">Pune:</strong>
+              <div style="color: var(--color-text-muted); font-size: 0.82rem;">Koregaon Park • Viman Nagar • Kothrud • Hinjewadi Phase 1</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="padding: 26px;">
+          <h4 style="font-family: var(--font-serif-heading); font-size: 1.15rem; color: var(--color-primary-dark); margin-bottom: 8px;">
+            Corporate & Bulk Catering
+          </h4>
+          <p style="font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5; margin-bottom: 14px;">
+            Looking for daily healthy lunch subscriptions for your office team of 10 to 200+ employees?
+          </p>
+          <a href="mailto:corporate@tiffinflow.in" class="btn btn-outline btn-sm" style="width: 100%;">
+            Enquire for Corporate Plans →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>TiffinFlow</h3>
+          <p>Wholesome home-style meals delivered on your terms in reusable stainless-steel tiffins.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="weekly-menu.html">Weekly Menu</a></li>
+            <li><a href="plans.html">Plans & Pricing</a></li>
+            <li><a href="build-week.html">Meal Planner</a></li>
+            <li><a href="subscription.html">My Subscription</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Why TiffinFlow</h4>
+          <ul class="footer-links">
+            <li><a href="difference.html">Why TiffinFlow vs Apps</a></li>
+            <li><a href="promise.html">Our Sustainable Promise</a></li>
+            <li><a href="tiffin-journey.html">The Tiffin Journey</a></li>
+            <li><a href="reviews.html">Community Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>Response SLA: Under 2 Hours</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

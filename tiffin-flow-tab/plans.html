@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Your Plan - TiffinFlow Tablet</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .plans-tablet-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-bottom: 32px;
+    }
+    .plan-card {
+      background: var(--white);
+      border: 1.5px solid var(--border-color);
+      border-radius: 20px;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.2s;
+    }
+    .plan-card.popular {
+      border-color: var(--accent-orange);
+      box-shadow: 0 12px 32px rgba(239, 106, 50, 0.16);
+      transform: translateY(-4px);
+    }
+    .popular-tag {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--accent-orange);
+      color: var(--white);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: 999px;
+      box-shadow: 0 4px 10px rgba(239, 106, 50, 0.3);
+      white-space: nowrap;
+    }
+    .plan-features-list {
+      list-style: none;
+      border-top: 1px solid var(--border-light);
+      padding-top: 14px;
+      margin: 16px 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px;
+    }
+    .plan-feature-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .feature-check {
+      color: var(--primary-green-light);
+      font-weight: 800;
+      font-size: 13px;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+      font-size: 13px;
+    }
+    .compare-table th, .compare-table td {
+      padding: 12px 16px;
+      text-align: center;
+      border-bottom: 1px solid var(--border-light);
+    }
+    .compare-table th:first-child, .compare-table td:first-child {
+      text-align: left;
+      font-weight: 700;
+      color: var(--primary-green);
+    }
+    .compare-table th {
+      background: var(--bg-cream);
+      font-weight: 800;
+      color: var(--primary-green);
+    }
+  </style>
+</head>
+<body>
+  <div class="tablet-container">
+    <!-- Header -->
+    <header class="tablet-header">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+
+      <nav class="tablet-nav-links">
+        <a href="index.html" class="tablet-nav-link">Home</a>
+        <a href="weekly-menu.html" class="tablet-nav-link">Menu</a>
+        <a href="plans.html" class="tablet-nav-link active">Plans</a>
+        <a href="subscription.html" class="tablet-nav-link">My Subscription</a>
+        <a href="reviews.html" class="tablet-nav-link">Reviews</a>
+      </nav>
+
+      <a href="login.html" class="btn btn-sm btn-secondary">Log In</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="tablet-content">
+      <div style="margin-bottom: 24px; text-align: center;">
+        <span class="eyebrow">PLANS THAT ADAPT</span>
+        <h1 class="page-title">Choose your plan</h1>
+        <p class="page-subtitle" style="margin-bottom: 0;">Pick what fits your routine. Change it whenever life changes.</p>
+      </div>
+
+      <!-- 3-Column Tablet Plans Grid -->
+      <div class="plans-tablet-grid">
+        <!-- Basic Plan -->
+        <div class="plan-card">
+          <div>
+            <span class="eyebrow" style="color: var(--primary-green-light);">Basic</span>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">Best for trying TiffinFlow</div>
+            <div style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--primary-green); margin-bottom: 4px;">
+              ₹599 <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">/ 7 meals</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item"><span class="feature-check">✓</span> 7 home-style meals</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Skip up to 2 meals</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Reusable steel tiffins</li>
+              <li class="plan-feature-item" style="color: var(--text-subtle);"><span style="color: var(--text-subtle);">—</span> Dish swapping</li>
+            </ul>
+          </div>
+          <a href="customize.html" class="btn btn-secondary">Choose Basic</a>
+        </div>
+
+        <!-- Standard Flex Plan -->
+        <div class="plan-card popular">
+          <div class="popular-tag">MOST POPULAR</div>
+          <div>
+            <span class="eyebrow" style="color: var(--accent-orange-dark);">Standard Flex</span>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">Made for flexible routines</div>
+            <div style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--accent-orange-dark); margin-bottom: 4px;">
+              ₹1,149 <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">/ 15 meals</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item"><span class="feature-check">✓</span> 15 flexible meals</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Unlimited skips with credit rollover</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> 1-click dish swap</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Pause plan anytime</li>
+            </ul>
+          </div>
+          <a href="customize.html" class="btn btn-primary">Choose Standard</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="plan-card">
+          <div>
+            <span class="eyebrow" style="color: var(--primary-green-light);">Premium</span>
+            <div style="font-size: 13px; color: var(--text-muted); margin-bottom: 12px;">Complete monthly comfort</div>
+            <div style="font-family: var(--font-heading); font-size: 28px; font-weight: 800; color: var(--primary-green); margin-bottom: 4px;">
+              ₹1,999 <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">/ 30 meals</span>
+            </div>
+
+            <ul class="plan-features-list">
+              <li class="plan-feature-item"><span class="feature-check">✓</span> 30 full meals for the month</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Unlimited skips & pause</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Priority delivery window</li>
+              <li class="plan-feature-item"><span class="feature-check">✓</span> Weekend special feast included</li>
+            </ul>
+          </div>
+          <a href="customize.html" class="btn btn-forest">Choose Premium</a>
+        </div>
+      </div>
+
+      <!-- Plan Feature Matrix -->
+      <div>
+        <h3 class="section-title" style="font-size: 18px;">Compare all plan features</h3>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Basic (7 meals)</th>
+              <th>Standard Flex (15 meals)</th>
+              <th>Premium (30 meals)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Meal quantity</td>
+              <td>7</td>
+              <td>15</td>
+              <td>30</td>
+            </tr>
+            <tr>
+              <td>Skip meals</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+            </tr>
+            <tr>
+              <td>Swap dishes</td>
+              <td style="color: var(--text-subtle);">—</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+            </tr>
+            <tr>
+              <td>Pause subscription</td>
+              <td style="color: var(--text-subtle);">—</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+            </tr>
+            <tr>
+              <td>Reusable steel tiffins</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+              <td style="color: var(--success-green); font-weight: 800;">✓</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- Tablet Footer -->
+    <footer class="tablet-footer">
+      <div>© 2026 TiffinFlow Technologies Pvt Ltd.</div>
+      <div style="display: flex; gap: 16px;">
+        <a href="weekly-menu.html">Menu</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="subscription.html">My Subscription</a>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

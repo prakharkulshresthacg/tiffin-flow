@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout & Payment — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link">Weekly Menu</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="customize.html" class="btn btn-ghost btn-sm">← Back to Customization</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Multi-Step Stepper -->
+  <div class="container">
+    <div class="stepper-nav">
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Select Plan</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Customize</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step active">
+        <div class="stepper-num">3</div>
+        <span>Checkout</span>
+      </div>
+      <div class="stepper-line"></div>
+      <div class="stepper-step">
+        <div class="stepper-num">4</div>
+        <span>Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Main Content: 2-Column Split -->
+  <main class="container" style="padding-bottom: 80px;">
+    <div class="split-layout-2">
+      
+      <!-- Left Column: Address & Payment Methods -->
+      <div>
+        <div style="margin-bottom: 30px;">
+          <span class="section-badge">Step 3 of 4</span>
+          <h1 class="section-title">Review address & <em>payment</em></h1>
+          <p class="section-subtitle">
+            Verify where we should deliver your dabba, choose your payment mode, and apply any credits.
+          </p>
+        </div>
+
+        <!-- Delivery Address Box -->
+        <div class="card" style="margin-bottom: 24px; padding: 26px;">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px;">
+            <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark);">
+              Delivery Address
+            </h3>
+            <span style="font-size: 0.82rem; font-weight: 700; color: var(--color-accent); background: var(--color-accent-light); padding: 4px 10px; border-radius: var(--radius-pill);">
+              DEFAULT HOME
+            </span>
+          </div>
+
+          <div style="background: var(--color-surface-muted); padding: 18px; border-radius: var(--radius-md); border: 1px solid var(--color-border); margin-bottom: 16px;">
+            <div style="font-weight: 700; color: var(--color-primary-dark); font-size: 1.05rem; margin-bottom: 4px;">
+              Aarav Mehta <span style="font-weight: 400; color: var(--color-text-light); font-size: 0.9rem;">(+91 98765 43210)</span>
+            </div>
+            <div style="font-size: 0.92rem; color: var(--color-text-muted); line-height: 1.5;">
+              Flat 402, Maple Residency, 12th Main Road, Indiranagar<br>
+              Bengaluru, Karnataka — 560038
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-bottom: 0;">
+            <label class="form-label" for="notes">Delivery Instructions (Optional)</label>
+            <input type="text" id="notes" class="form-input" placeholder="e.g. Ring the bell, or leave at doorstep with security">
+          </div>
+        </div>
+
+        <!-- Payment Method Selection -->
+        <div class="card" style="margin-bottom: 24px; padding: 26px;">
+          <h3 style="font-family: var(--font-serif-heading); font-size: 1.25rem; color: var(--color-primary-dark); margin-bottom: 8px;">
+            Choose Payment Method
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 20px;">
+            Transactions are processed through encrypted 256-bit bank gateways.
+          </p>
+
+          <!-- TiffinFlow Wallet Credit Checkbox -->
+          <div style="background: #E8F5EF; border: 1.5px solid var(--color-success); border-radius: var(--radius-md); padding: 16px 20px; margin-bottom: 22px; display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; gap: 12px; align-items: center;">
+              <input type="checkbox" id="apply-wallet" checked style="width: 20px; height: 20px; accent-color: var(--color-success); cursor: pointer;">
+              <div>
+                <label for="apply-wallet" style="font-weight: 700; color: #14532D; cursor: pointer;">
+                  Apply TiffinFlow Wallet Balance
+                </label>
+                <div style="font-size: 0.8rem; color: #166534;">Credit earned from skipped meal on Oct 2</div>
+              </div>
+            </div>
+            <span style="font-weight: 800; color: var(--color-success); font-size: 1.15rem;">-₹85.00</span>
+          </div>
+
+          <!-- Radio Selector for Payment Modes -->
+          <div style="display: flex; flex-direction: column; gap: 16px;">
+            
+            <!-- UPI Option -->
+            <label style="display: flex; gap: 14px; padding: 18px; border: 2px solid var(--color-accent); border-radius: var(--radius-md); background: #FFFBF8; cursor: pointer; align-items: flex-start;">
+              <input type="radio" name="pay-method" checked style="margin-top: 4px; accent-color: var(--color-accent);">
+              <div style="flex: 1;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <strong style="font-size: 1rem; color: var(--color-primary-dark);">UPI Instant Payment (Google Pay / PhonePe / Paytm / QR)</strong>
+                  <span style="font-size: 0.75rem; background: var(--color-accent-light); color: var(--color-accent-dark); font-weight: 700; padding: 2px 8px; border-radius: var(--radius-pill);">RECOMMENDED</span>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;">
+                  Instant zero-fee transfer via any UPI app or scan QR code on screen.
+                </p>
+                <div style="margin-top: 12px;">
+                  <input type="text" class="form-input" placeholder="Enter UPI ID (e.g. mobile@upi)" value="aarav.mehta@okhdfcbank" style="max-width: 340px;">
+                </div>
+              </div>
+            </label>
+
+            <!-- Card Option -->
+            <label style="display: flex; gap: 14px; padding: 18px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; align-items: flex-start;">
+              <input type="radio" name="pay-method" style="margin-top: 4px; accent-color: var(--color-accent);">
+              <div style="flex: 1;">
+                <strong style="font-size: 1rem; color: var(--color-primary-dark);">Credit or Debit Card</strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;">
+                  Visa, MasterCard, RuPay, and American Express.
+                </p>
+              </div>
+            </label>
+
+            <!-- Net Banking Option -->
+            <label style="display: flex; gap: 14px; padding: 18px; border: 1.5px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); cursor: pointer; align-items: flex-start;">
+              <input type="radio" name="pay-method" style="margin-top: 4px; accent-color: var(--color-accent);">
+              <div style="flex: 1;">
+                <strong style="font-size: 1rem; color: var(--color-primary-dark);">Net Banking</strong>
+                <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 4px;">
+                  All major Indian banks supported (HDFC, ICICI, SBI, Axis, Kotak).
+                </p>
+              </div>
+            </label>
+
+          </div>
+        </div>
+
+        <div style="display: flex; align-items: center; gap: 12px; color: var(--color-text-muted); font-size: 0.85rem; margin-top: 20px;">
+          <span>🛡️</span>
+          <span>Your payment is protected by bank-grade 256-bit encryption. TiffinFlow never stores CVV numbers.</span>
+        </div>
+      </div>
+
+      <!-- Right Column: Final Order Breakdown -->
+      <div style="position: sticky; top: 100px;">
+        <div class="card" style="padding: 30px; box-shadow: var(--shadow-md);">
+          <h3 style="font-family: var(--font-serif-heading); font-size: 1.4rem; color: var(--color-primary-dark); margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--color-border);">
+            Order Breakdown
+          </h3>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.95rem;">
+            <span>Standard Flex Plan (15 Meals)</span>
+            <span style="font-weight: 700;">₹1,049</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; color: var(--color-text-muted);">
+            <span>Extra Rotis & Fresh Curd Add-ons</span>
+            <span>+₹135</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; color: var(--color-text-muted);">
+            <span>Steel Dabba Deposit (Refundable)</span>
+            <span>+₹200</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; color: var(--color-success); font-weight: 600;">
+            <span>Wallet Credit Applied</span>
+            <span>-₹85</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9rem; color: var(--color-success); font-weight: 600;">
+            <span>Promo Coupon (FIRSTFLOW)</span>
+            <span>-₹100</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9rem; color: var(--color-success); font-weight: 600;">
+            <span>Delivery Fee</span>
+            <span>FREE</span>
+          </div>
+
+          <div style="border-top: 2px dashed var(--color-border); padding-top: 18px; margin-top: 14px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px;">
+            <span style="font-size: 1.15rem; font-weight: 700; color: var(--color-primary-dark);">Total Payable</span>
+            <span style="font-size: 2.2rem; font-weight: 800; color: var(--color-accent); font-family: var(--font-accent);">₹1,199</span>
+          </div>
+
+          <a href="confirmation.html" class="btn btn-primary btn-lg" style="width: 100%; font-size: 1.1rem;">
+            Confirm & Pay ₹1,199 →
+          </a>
+
+          <div style="margin-top: 14px; text-align: center; font-size: 0.8rem; color: var(--color-text-light);">
+            Experiencing payment issues? <a href="failed-payment.html" style="color: var(--color-accent); font-weight: 600; text-decoration: underline;">Simulate payment failure / retry</a>
+          </div>
+
+          <p style="font-size: 0.78rem; text-align: center; color: var(--color-text-light); margin-top: 14px;">
+            By placing this order you agree to TiffinFlow's Terms of Service & Privacy Policy.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>256-Bit SSL Encrypted Checkout</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

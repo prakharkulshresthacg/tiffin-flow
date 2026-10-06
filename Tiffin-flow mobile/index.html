@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TiffinFlow - Home-style Meals on Your Schedule</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero-section {
+      padding: 16px 20px 24px;
+      text-align: center;
+      position: relative;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #FFF0E6;
+      color: var(--accent-orange-dark);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      margin-bottom: 14px;
+    }
+    .hero-title {
+      font-family: var(--font-heading);
+      font-size: 27px;
+      font-weight: 800;
+      color: var(--primary-green);
+      line-height: 1.22;
+      letter-spacing: -0.025em;
+      margin-bottom: 12px;
+    }
+    .hero-subtitle {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 22px;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .hero-image-card {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: var(--shadow-float);
+      border: 1px solid var(--border-color);
+    }
+    .hero-image-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .hero-tag {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: rgba(23, 53, 45, 0.85);
+      backdrop-filter: blur(8px);
+      color: var(--white);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .promise-card {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+    .promise-icon-box {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--primary-green-pale);
+      color: var(--primary-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .h-scroll-container {
+      display: flex;
+      gap: 14px;
+      overflow-x: auto;
+      padding-bottom: 12px;
+      margin: 0 -20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      scrollbar-width: none;
+    }
+    .h-scroll-container::-webkit-scrollbar {
+      display: none;
+    }
+    .mini-meal-card {
+      min-width: 220px;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .mini-meal-card img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+    }
+    .step-box {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-orange);
+      color: var(--white);
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+      <div style="display: flex; gap: 8px;">
+        <a href="login.html" class="icon-btn bordered" title="My Account">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-content no-padding">
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="hero-badge">
+          <span>✨ Home-style · Reusable · Flexible</span>
+        </div>
+
+        <h1 class="hero-title">Good food shouldn't depend on your schedule.</h1>
+        <p class="hero-subtitle">Home-style meals, flexible plans and reusable stainless-steel tiffins — made for the way you live.</p>
+
+        <div class="hero-cta-group">
+          <a href="plans.html" class="btn btn-primary">Explore Plans</a>
+          <a href="weekly-menu.html" class="btn btn-secondary">View Weekly Menu</a>
+        </div>
+
+        <div class="hero-image-card">
+          <img src="images/thali.png" alt="Indian home-style thali served on a steel plate">
+          <div class="hero-tag">Pure Home Taste • Zero Single-Use Plastic</div>
+        </div>
+      </section>
+
+      <!-- Promises Section -->
+      <section style="padding: 10px 20px 24px; background: var(--bg-cream);">
+        <p class="eyebrow">THE TIFFINFLOW PROMISE</p>
+        <h2 class="section-title">Made for real life</h2>
+
+        <div class="promise-card">
+          <div class="promise-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 14px; font-weight: 700; color: var(--primary-green); margin-bottom: 2px;">Home-style, never restaurant-heavy</h3>
+            <p style="font-size: 12px; color: var(--text-muted);">Simple, balanced, comforting meals cooked with fresh ingredients, low oil and authentic home recipes.</p>
+          </div>
+        </div>
+
+        <div class="promise-card">
+          <div class="promise-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 14px; font-weight: 700; color: var(--primary-green); margin-bottom: 2px;">Flexible schedule, zero waste</h3>
+            <p style="font-size: 12px; color: var(--text-muted);">Skip, pause, or swap meals anytime before the cutoff. Your unused credits never expire.</p>
+          </div>
+        </div>
+
+        <div class="promise-card">
+          <div class="promise-icon-box">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <path d="M8 14s1.5 2 4 2 4-2 4-2"></path>
+              <line x1="9" y1="9" x2="9.01" y2="9"></line>
+              <line x1="15" y1="9" x2="15.01" y2="9"></line>
+            </svg>
+          </div>
+          <div>
+            <h3 style="font-size: 14px; font-weight: 700; color: var(--primary-green); margin-bottom: 2px;">Reusable stainless-steel tiffins</h3>
+            <p style="font-size: 12px; color: var(--text-muted);">Hot, fresh food in traditional hygienic steel boxes. We pick up the empty tiffin on next delivery.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Weekly Menu Carousel -->
+      <section style="padding: 24px 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 14px;">
+          <div>
+            <p class="eyebrow">THIS WEEK'S MENU</p>
+            <h2 class="section-title" style="margin-bottom: 0;">Fresh Daily Varieties</h2>
+          </div>
+          <a href="weekly-menu.html" style="font-size: 12px; font-weight: 700; color: var(--accent-orange);">View All &rarr;</a>
+        </div>
+
+        <div class="h-scroll-container">
+          <div class="mini-meal-card">
+            <img src="images/paneer-tikka.png" alt="Paneer Tikka Thali">
+            <div style="padding: 12px;">
+              <span class="badge badge-green" style="margin-bottom: 4px;">Mon · Lunch</span>
+              <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Paneer Tikka Thali</h4>
+              <p style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Dal fry, 3 rotis, jeera rice, salad</p>
+            </div>
+          </div>
+
+          <div class="mini-meal-card">
+            <img src="images/rajma-rice.png" alt="Rajma Rice">
+            <div style="padding: 12px;">
+              <span class="badge badge-green" style="margin-bottom: 4px;">Tue · Lunch</span>
+              <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Punjabi Rajma Rice</h4>
+              <p style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Slow-cooked rajma, basmati rice, raita</p>
+            </div>
+          </div>
+
+          <div class="mini-meal-card">
+            <img src="images/gujarati-thali.png" alt="Gujarati Special Thali">
+            <div style="padding: 12px;">
+              <span class="badge badge-green" style="margin-bottom: 4px;">Wed · Lunch</span>
+              <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Gujarati Special Thali</h4>
+              <p style="font-size: 11px; color: var(--text-muted); margin-top: 2px;">Kadhi, khichdi, 2 sabzi, phulkas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Kitchen Story Banner -->
+      <section style="padding: 0 20px 24px;">
+        <div class="card card-forest" style="position: relative; overflow: hidden; padding: 22px;">
+          <h3 style="font-family: var(--font-heading); font-size: 18px; font-weight: 800; margin-bottom: 8px;">Cooked with the feeling of home</h3>
+          <p style="font-size: 12px; opacity: 0.9; margin-bottom: 16px; line-height: 1.5;">Prepared daily by passionate home cooks using authentic regional recipes and strict kitchen hygiene standards.</p>
+          <div style="border-radius: 12px; overflow: hidden; height: 160px; margin-bottom: 14px;">
+            <img src="images/kitchen.png" alt="Woman preparing fresh food" style="width: 100%; height: 100%; object-fit: cover;">
+          </div>
+          <a href="signup.html" class="btn btn-primary" style="background: var(--accent-orange); width: 100%;">Start My Subscription</a>
+        </div>
+      </section>
+
+      <!-- How It Works -->
+      <section style="padding: 10px 20px 30px;">
+        <p class="eyebrow">SIMPLE 3-STEP PROCESS</p>
+        <h2 class="section-title">How TiffinFlow Works</h2>
+
+        <div class="step-box">
+          <div class="step-num">1</div>
+          <div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Choose your plan</h4>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Pick 7, 15, or 30 meals. Customize your dietary preference (Veg, Non-Veg, Jain).</p>
+          </div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-num">2</div>
+          <div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Plan your week</h4>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Select lunch or dinner delivery. Skip days or swap meals with a single click.</p>
+          </div>
+        </div>
+
+        <div class="step-box">
+          <div class="step-num">3</div>
+          <div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Enjoy hot, fresh tiffins</h4>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Delivered hot in reusable steel containers. Hand back the empty one next day!</p>
+          </div>
+        </div>
+
+        <a href="plans.html" class="btn btn-forest" style="margin-top: 8px;">View Plans & Pricing</a>
+      </section>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="plans.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        <span>Plans</span>
+      </a>
+      <a href="weekly-menu.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        </svg>
+        <span>Menu</span>
+      </a>
+      <a href="subscription.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>My Plan</span>
+      </a>
+      <a href="login.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Account</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

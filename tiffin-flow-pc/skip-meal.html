@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skip Meal — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: var(--color-bg);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <div class="header-actions">
+        <a href="subscription.html" class="btn btn-outline btn-sm">← Back to Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container-narrow" style="padding-top: 60px; padding-bottom: 80px;">
+    <div class="card" style="padding: 46px 40px; max-width: 600px; margin: 0 auto;">
+      <span class="section-badge" style="background: var(--color-warning-bg); color: var(--color-warning);">
+        Meal Action
+      </span>
+
+      <h1 class="section-title" style="margin-bottom: 8px; font-size: 2.2rem;">
+        Skip this meal?
+      </h1>
+
+      <div style="background: var(--color-surface-muted); padding: 18px 22px; border-radius: var(--radius-md); border: 1px solid var(--color-border); margin: 20px 0 24px;">
+        <div style="font-size: 0.8rem; font-weight: 700; color: var(--color-text-light); text-transform: uppercase;">Selected Delivery</div>
+        <div style="font-size: 1.25rem; font-weight: 800; color: var(--color-primary-dark); margin: 2px 0;">
+          Thursday, 15 May • Lunch
+        </div>
+        <div style="font-size: 0.9rem; color: var(--color-text-muted);">
+          Homestyle Dal Tadka Thali (3 Rotis, Rice, Seasonal Sabzi)
+        </div>
+      </div>
+
+      <form action="skipped.html" method="get">
+        <div class="form-group">
+          <label class="form-label">Why are you skipping?</label>
+          <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 8px;">
+            <label style="display: flex; gap: 10px; align-items: center; cursor: pointer; font-size: 0.92rem;">
+              <input type="radio" name="skip-reason" checked style="accent-color: var(--color-accent);">
+              <span>Going home for the weekend</span>
+            </label>
+            <label style="display: flex; gap: 10px; align-items: center; cursor: pointer; font-size: 0.92rem;">
+              <input type="radio" name="skip-reason" style="accent-color: var(--color-accent);">
+              <span>College or office event / Eating out</span>
+            </label>
+            <label style="display: flex; gap: 10px; align-items: center; cursor: pointer; font-size: 0.92rem;">
+              <input type="radio" name="skip-reason" style="accent-color: var(--color-accent);">
+              <span>Fasting / Personal dietary break</span>
+            </label>
+            <label style="display: flex; gap: 10px; align-items: center; cursor: pointer; font-size: 0.92rem;">
+              <input type="radio" name="skip-reason" style="accent-color: var(--color-accent);">
+              <span>Other personal commitment</span>
+            </label>
+          </div>
+        </div>
+
+        <div style="background: #E8F5EF; border: 1.5px solid var(--color-success); border-radius: var(--radius-md); padding: 18px 20px; margin-bottom: 28px;">
+          <div style="font-weight: 800; color: #14532D; font-size: 1.1rem; margin-bottom: 4px;">
+            ₹85 Meal Credit
+          </div>
+          <div style="font-size: 0.88rem; color: #166534; line-height: 1.5;">
+            Will be credited instantly to your TiffinFlow Wallet and will automatically discount your next subscription cycle.
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 14px;">
+          <button type="submit" class="btn btn-primary btn-lg" style="flex: 1;">
+            Confirm Skip (+₹85 Credit) →
+          </button>
+          <a href="subscription.html" class="btn btn-outline btn-lg" style="flex: 1; text-align: center;">
+            Keep Meal
+          </a>
+        </div>
+      </form>
+    </div>
+  </main>
+
+</body>
+</html>

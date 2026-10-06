@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Successful - TiffinFlow Tablet</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .confirm-box {
+      background: var(--white);
+      border: 1.5px solid var(--border-color);
+      border-radius: 24px;
+      padding: 40px;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      max-width: 680px;
+      margin: 20px auto;
+    }
+    .check-ring {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: #E8F3EB;
+      border: 6px solid #CDE6D5;
+      color: #2F7057;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .meta-metrics {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      background: var(--bg-cream-warm);
+      border-radius: 16px;
+      padding: 16px;
+      margin: 24px 0;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <div class="tablet-container">
+    <!-- Header -->
+    <header class="tablet-header">
+      <a href="index.html" class="brand-logo" style="margin: 0 auto;">
+        <span class="brand-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="tablet-content" style="display: flex; align-items: center; justify-content: center;">
+      <div class="confirm-box">
+        <div class="check-ring">
+          <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+
+        <span class="eyebrow">PAYMENT SUCCESSFUL</span>
+        <h1 class="page-title" style="font-size: 32px; margin-bottom: 6px;">You're all set!</h1>
+        <p class="page-subtitle" style="margin-bottom: 0;">Your TiffinFlow subscription is active and confirmed.</p>
+
+        <div class="meta-metrics">
+          <div>
+            <span style="font-size: 10px; font-weight: 800; color: var(--text-muted);">PLAN</span>
+            <strong style="display: block; font-size: 14px; color: var(--primary-green);">Standard Flex</strong>
+          </div>
+          <div>
+            <span style="font-size: 10px; font-weight: 800; color: var(--text-muted);">TOTAL MEALS</span>
+            <strong style="display: block; font-size: 14px; color: var(--primary-green);">15 Meals</strong>
+          </div>
+          <div>
+            <span style="font-size: 10px; font-weight: 800; color: var(--text-muted);">START DATE</span>
+            <strong style="display: block; font-size: 14px; color: var(--primary-green);">Oct 7, 2026</strong>
+          </div>
+          <div>
+            <span style="font-size: 10px; font-weight: 800; color: var(--text-muted);">STATUS</span>
+            <span class="badge badge-paid" style="margin-top: 3px;">PAID · ₹1,184</span>
+          </div>
+        </div>
+
+        <div class="card card-forest" style="text-align: left; padding: 20px; margin-bottom: 24px;">
+          <h4 style="font-family: var(--font-heading); font-size: 15px; font-weight: 800; margin-bottom: 4px;">Reusable Stainless-Steel Tiffins</h4>
+          <p style="font-size: 12px; opacity: 0.9; line-height: 1.5;">
+            Your first meal arrives packed fresh in our insulated steel box. Simply place the empty tiffin outside before your next delivery for zero-hassle swap!
+          </p>
+        </div>
+
+        <div style="display: flex; gap: 12px; justify-content: center;">
+          <a href="subscription.html" class="btn btn-primary" style="width: auto;">Go to Subscription Dashboard</a>
+          <a href="build-week.html" class="btn btn-secondary" style="width: auto;">Open Smart Meal Planner</a>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

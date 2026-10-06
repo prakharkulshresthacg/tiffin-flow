@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Plan - TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .selection-box {
+      border: 1.5px solid var(--border-color);
+      border-radius: 14px;
+      padding: 14px 16px;
+      background: var(--white);
+      margin-bottom: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.2s;
+    }
+    .selection-box:hover {
+      border-color: var(--accent-orange);
+    }
+    .selection-box input[type="radio"]:checked + .selection-content {
+      color: var(--primary-green);
+    }
+    .selection-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      width: 100%;
+    }
+    .deposit-card {
+      background: var(--bg-cream);
+      border: 1px dashed #D6D3D1;
+      border-radius: 16px;
+      padding: 14px 16px;
+      margin-top: 16px;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+    .summary-bar {
+      position: sticky;
+      bottom: 0;
+      background: rgba(255, 253, 248, 0.98);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid var(--border-color);
+      padding: 14px 20px 20px;
+      margin: 0 -20px -28px;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="plans.html" class="icon-btn bordered" title="Back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+      <div style="width: 38px;"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-content">
+      <!-- Stepper -->
+      <div class="stepper-container">
+        <div class="stepper-step completed">
+          <div class="step-indicator">✓</div>
+          <span class="step-label">Plan</span>
+        </div>
+        <div class="stepper-step active">
+          <div class="step-indicator">2</div>
+          <span class="step-label">Customize</span>
+        </div>
+        <div class="stepper-step">
+          <div class="step-indicator">3</div>
+          <span class="step-label">Payment</span>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 18px;">
+        <h1 class="page-title">Make it yours</h1>
+        <p class="page-subtitle">Customize your plan around your daily routine.</p>
+      </div>
+
+      <!-- Selected Plan Card -->
+      <div class="card card-accent" style="padding: 16px 18px; margin-bottom: 20px;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+          <div>
+            <span class="eyebrow" style="color: var(--accent-orange-dark);">SELECTED PLAN</span>
+            <h3 style="font-family: var(--font-heading); font-size: 17px; font-weight: 800; color: var(--primary-green);">Standard Flex Plan</h3>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 2px;">Home-style meals with total flexibility</p>
+          </div>
+          <div style="text-align: right;">
+            <div style="font-family: var(--font-heading); font-size: 20px; font-weight: 800; color: var(--accent-orange-dark);">₹1,149</div>
+            <span style="font-size: 11px; color: var(--text-muted); font-weight: 600;">15 meals</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Diet Preference Selection -->
+      <div style="margin-bottom: 20px;">
+        <label class="form-label" style="margin-bottom: 8px;">Dietary Preference</label>
+        <div class="chip-group">
+          <input type="radio" id="diet-veg" name="diet" class="chip-input veg-input" checked>
+          <label for="diet-veg" class="chip-label">
+            <span class="chip-dot"></span>
+            Veg (Pure)
+          </label>
+
+          <input type="radio" id="diet-nonveg" name="diet" class="chip-input nonveg-input">
+          <label for="diet-nonveg" class="chip-label">
+            <span class="chip-dot"></span>
+            Non-Veg
+          </label>
+
+          <input type="radio" id="diet-jain" name="diet" class="chip-input jain-input">
+          <label for="diet-jain" class="chip-label">
+            <span class="chip-dot"></span>
+            Jain
+          </label>
+        </div>
+      </div>
+
+      <!-- Meal Slot Selection -->
+      <div style="margin-bottom: 20px;">
+        <label class="form-label" style="margin-bottom: 8px;">Meal Slot</label>
+        <div class="chip-group">
+          <input type="radio" id="slot-lunch" name="slot" class="chip-input" checked>
+          <label for="slot-lunch" class="chip-label">Lunch</label>
+
+          <input type="radio" id="slot-dinner" name="slot" class="chip-input">
+          <label for="slot-dinner" class="chip-label">Dinner</label>
+
+          <input type="radio" id="slot-both" name="slot" class="chip-input">
+          <label for="slot-both" class="chip-label">Both</label>
+        </div>
+      </div>
+
+      <!-- Delivery Window Selection -->
+      <div style="margin-bottom: 20px;">
+        <label class="form-label" style="margin-bottom: 8px;">Delivery Window</label>
+        
+        <label class="selection-box">
+          <div class="selection-row">
+            <input type="radio" name="timing" checked style="accent-color: var(--accent-orange);">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: var(--primary-green);">12:30 PM – 1:30 PM</div>
+              <div style="font-size: 11px; color: var(--text-muted);">Standard Afternoon Lunch Window</div>
+            </div>
+          </div>
+          <span class="badge badge-green">Recommended</span>
+        </label>
+
+        <label class="selection-box">
+          <div class="selection-row">
+            <input type="radio" name="timing" style="accent-color: var(--accent-orange);">
+            <div>
+              <div style="font-size: 13px; font-weight: 700; color: var(--primary-green);">1:30 PM – 2:30 PM</div>
+              <div style="font-size: 11px; color: var(--text-muted);">Late Lunch Window</div>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- Reusable Bag Deposit -->
+      <div class="deposit-card">
+        <input type="checkbox" checked id="bag-deposit" style="accent-color: var(--accent-orange); width: 18px; height: 18px; margin-top: 2px;">
+        <label for="bag-deposit" style="font-size: 12px; color: var(--text-dark); cursor: pointer;">
+          <strong style="display: block; color: var(--primary-green); font-size: 13px; margin-bottom: 2px;">Reusable Stainless-Steel Tiffin Set</strong>
+          One-time refundable security deposit of <strong>₹150</strong>. 100% refunded when you end your subscription.
+        </label>
+      </div>
+
+      <!-- Bottom Action Bar -->
+      <div class="summary-bar">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px;">
+          <div>
+            <div style="font-size: 11px; color: var(--text-muted); font-weight: 700;">TOTAL PAYABLE</div>
+            <div style="font-family: var(--font-heading); font-size: 22px; font-weight: 800; color: var(--primary-green);">₹1,299 <span style="font-size: 12px; font-weight: 500; color: var(--text-muted);">(incl. deposit)</span></div>
+          </div>
+          <a href="checkout.html" class="btn btn-primary" style="width: auto; padding: 12px 24px;">Continue to Payment &rarr;</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

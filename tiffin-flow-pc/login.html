@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Back — TiffinFlow Log In</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background: var(--color-bg);">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <div class="header-actions">
+        <span style="font-size: 0.9rem; color: var(--color-text-muted);">New to TiffinFlow?</span>
+        <a href="signup.html" class="btn btn-primary btn-sm">Create Account</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Auth Split Screen Layout -->
+  <main class="auth-wrapper">
+    
+    <!-- Left Hero Illustration Panel -->
+    <div class="auth-hero-panel">
+      <div>
+        <span class="section-badge" style="background: rgba(255, 255, 255, 0.15); color: #FFAE85;">
+          Home Food On Your Terms
+        </span>
+        <h2 style="font-family: var(--font-serif-display); font-size: 3rem; line-height: 1.15; margin: 16px 0 20px;">
+          Wholesome meals, <br><em style="color: #FFAE85;">every single day.</em>
+        </h2>
+        <p style="color: #D1DFDA; font-size: 1.15rem; line-height: 1.6; max-width: 440px;">
+          Enjoy fresh, hot home-style meals prepared by certified domestic home chefs delivered in medical-grade stainless-steel tiffins.
+        </p>
+      </div>
+
+      <div style="background: rgba(255, 255, 255, 0.08); padding: 24px; border-radius: var(--radius-lg); border: 1px solid rgba(255, 255, 255, 0.15); backdrop-filter: blur(8px);">
+        <p style="font-style: italic; color: #E2EAE6; font-size: 0.95rem; line-height: 1.5; margin-bottom: 12px;">
+          “TiffinFlow feels just like eating food made by my mother. Skipping days when I travel takes only one second.”
+        </p>
+        <div style="font-weight: 700; color: #FFFFFF; font-size: 0.9rem;">— Aarav Mehta, Indiranagar</div>
+      </div>
+    </div>
+
+    <!-- Right Login Form Panel -->
+    <div class="auth-form-panel">
+      <div style="margin-bottom: 30px;">
+        <span style="font-size: 0.75rem; font-weight: 800; letter-spacing: 0.16em; text-transform: uppercase; color: var(--color-accent);">
+          GOOD TO SEE YOU AGAIN
+        </span>
+        <h1 style="font-family: var(--font-serif-display); font-size: 2.5rem; color: var(--color-primary-dark); margin: 6px 0 10px;">
+          Welcome back
+        </h1>
+        <p style="font-size: 0.95rem; color: var(--color-text-muted);">
+          Your next home-style meal is closer than you think.
+        </p>
+      </div>
+
+      <form action="subscription.html" method="get">
+        <div class="form-group">
+          <label class="form-label" for="login-email">Email address</label>
+          <input type="email" id="login-email" class="form-input" placeholder="you@example.com" value="aarav.mehta@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="login-pass">Password</label>
+          <input type="password" id="login-pass" class="form-input" placeholder="Enter your password" value="••••••••••••" required>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; font-size: 0.88rem;">
+          <label style="display: flex; gap: 8px; align-items: center; cursor: pointer; color: var(--color-text-muted);">
+            <input type="checkbox" checked style="accent-color: var(--color-accent);">
+            <span>Remember me</span>
+          </label>
+          <a href="help.html#faq" style="color: var(--color-accent); font-weight: 600;">Forgot password?</a>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-bottom: 20px;">
+          Sign In to TiffinFlow →
+        </button>
+
+        <div style="display: flex; align-items: center; gap: 14px; margin: 16px 0; color: var(--color-text-light); font-size: 0.82rem;">
+          <div style="flex: 1; height: 1px; background: var(--color-border);"></div>
+          <span>or continue with</span>
+          <div style="flex: 1; height: 1px; background: var(--color-border);"></div>
+        </div>
+
+        <div class="grid-2" style="gap: 12px; margin-bottom: 24px;">
+          <a href="subscription.html" class="btn btn-outline btn-md" style="width: 100%; font-size: 0.85rem; text-align: center;">
+            🔍 Google
+          </a>
+          <a href="subscription.html" class="btn btn-outline btn-md" style="width: 100%; font-size: 0.85rem; text-align: center;">
+            🍎 Apple
+          </a>
+        </div>
+
+        <div style="text-align: center; font-size: 0.9rem; color: var(--color-text-muted); padding-top: 16px; border-top: 1px solid var(--color-border);">
+          New to TiffinFlow? <a href="signup.html" style="font-weight: 700; color: var(--color-accent);">Create an account</a>
+        </div>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; font-size: 0.78rem; color: var(--color-text-light); margin-top: 20px;">
+          <span>🔒</span>
+          <span>Your details are encrypted and always handled securely.</span>
+        </div>
+      </form>
+    </div>
+
+  </main>
+
+</body>
+</html>

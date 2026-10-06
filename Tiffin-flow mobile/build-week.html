@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build Your Week - TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .week-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+    .day-block {
+      background: var(--white);
+      border: 1px solid var(--border-color);
+      border-radius: 18px;
+      padding: 16px;
+      margin-bottom: 16px;
+      box-shadow: var(--shadow-sm);
+    }
+    .day-block-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border-light);
+      margin-bottom: 12px;
+    }
+    .slot-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .slot-row:last-child {
+      margin-bottom: 0;
+    }
+    .slot-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <a href="subscription.html" class="icon-btn bordered" title="Back">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </a>
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+      <div style="width: 38px;"></div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="app-content">
+      <div style="margin-bottom: 16px;">
+        <h1 class="page-title">Build your week</h1>
+        <p class="page-subtitle">Choose your meals, adapt your schedule, and enjoy food that feels like home.</p>
+      </div>
+
+      <!-- Week Meta Bar -->
+      <div class="week-meta-bar">
+        <div>
+          <span style="font-size: 10px; font-weight: 800; color: var(--text-muted); letter-spacing: 0.08em; display: block;">WEEK</span>
+          <strong style="font-size: 14px; color: var(--primary-green);">Oct 7 – Oct 13</strong>
+        </div>
+        <div style="text-align: right;">
+          <span style="font-size: 10px; font-weight: 800; color: var(--text-muted); letter-spacing: 0.08em; display: block;">PLAN</span>
+          <span class="badge badge-green">Standard Flex</span>
+        </div>
+      </div>
+
+      <!-- Monday Block -->
+      <div class="day-block">
+        <div class="day-block-header">
+          <div>
+            <span class="eyebrow">OCT 7</span>
+            <h3 style="font-size: 15px; font-weight: 800; color: var(--primary-green);">Monday</h3>
+          </div>
+          <span class="badge badge-green">Confirmed</span>
+        </div>
+
+        <div class="slot-row">
+          <img src="images/paneer-tikka.png" alt="Paneer Tikka Thali" class="slot-img">
+          <div style="flex: 1;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--accent-orange-dark);">LUNCH · 12:30 PM</div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Paneer Tikka Thali</h4>
+            <div style="display: flex; gap: 8px; margin-top: 6px;">
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Swap</button>
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tuesday Block -->
+      <div class="day-block">
+        <div class="day-block-header">
+          <div>
+            <span class="eyebrow">OCT 8</span>
+            <h3 style="font-size: 15px; font-weight: 800; color: var(--primary-green);">Tuesday</h3>
+          </div>
+          <span class="badge badge-green">Confirmed</span>
+        </div>
+
+        <div class="slot-row">
+          <img src="images/rajma-rice.png" alt="Rajma Rice" class="slot-img">
+          <div style="flex: 1;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--accent-orange-dark);">LUNCH · 12:30 PM</div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Rajma Rice Bowl</h4>
+            <div style="display: flex; gap: 8px; margin-top: 6px;">
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Swap</button>
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wednesday Block -->
+      <div class="day-block">
+        <div class="day-block-header">
+          <div>
+            <span class="eyebrow">OCT 9</span>
+            <h3 style="font-size: 15px; font-weight: 800; color: var(--primary-green);">Wednesday</h3>
+          </div>
+          <span class="badge badge-green">Confirmed</span>
+        </div>
+
+        <div class="slot-row">
+          <img src="images/gujarati-thali.png" alt="Gujarati Special Thali" class="slot-img">
+          <div style="flex: 1;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--accent-orange-dark);">LUNCH · 12:30 PM</div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Gujarati Special Thali</h4>
+            <div style="display: flex; gap: 8px; margin-top: 6px;">
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Swap</button>
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Thursday Block -->
+      <div class="day-block">
+        <div class="day-block-header">
+          <div>
+            <span class="eyebrow">OCT 10</span>
+            <h3 style="font-size: 15px; font-weight: 800; color: var(--primary-green);">Thursday</h3>
+          </div>
+          <span class="badge badge-green">Confirmed</span>
+        </div>
+
+        <div class="slot-row">
+          <img src="images/dal-tadka.png" alt="Dal Tadka Thali" class="slot-img">
+          <div style="flex: 1;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--accent-orange-dark);">LUNCH · 12:30 PM</div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Dal Tadka Thali</h4>
+            <div style="display: flex; gap: 8px; margin-top: 6px;">
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Swap</button>
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Friday Block -->
+      <div class="day-block">
+        <div class="day-block-header">
+          <div>
+            <span class="eyebrow">OCT 11</span>
+            <h3 style="font-size: 15px; font-weight: 800; color: var(--primary-green);">Friday</h3>
+          </div>
+          <span class="badge badge-green">Confirmed</span>
+        </div>
+
+        <div class="slot-row">
+          <img src="images/veg-biryani.png" alt="Veg Biryani" class="slot-img">
+          <div style="flex: 1;">
+            <div style="font-size: 11px; font-weight: 700; color: var(--accent-orange-dark);">LUNCH · 12:30 PM</div>
+            <h4 style="font-size: 14px; font-weight: 700; color: var(--primary-green);">Veg Biryani Feast</h4>
+            <div style="display: flex; gap: 8px; margin-top: 6px;">
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Swap</button>
+              <button type="button" class="btn btn-sm btn-secondary" style="padding: 4px 10px; font-size: 11px;">Skip</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Save Week Buttons -->
+      <div style="margin-top: 10px; margin-bottom: 20px;">
+        <a href="subscription.html" class="btn btn-primary" style="margin-bottom: 10px;">Save Weekly Schedule</a>
+        <a href="subscription.html" class="btn btn-secondary">Back to My Subscription</a>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="index.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="plans.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+          <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+        </svg>
+        <span>Plans</span>
+      </a>
+      <a href="weekly-menu.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+          <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+        </svg>
+        <span>Menu</span>
+      </a>
+      <a href="subscription.html" class="nav-item active">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        <span>My Plan</span>
+      </a>
+      <a href="login.html" class="nav-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+          <circle cx="12" cy="7" r="4"></circle>
+        </svg>
+        <span>Account</span>
+      </a>
+    </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weekly Menu — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-announcement">
+    🍱 New Menu Every Monday: 100% Freshly Sourced Vegetables & Zero Artificial Flavors.
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link active">Weekly Menu</a>
+        <a href="plans.html" class="nav-link">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-search">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search menu...">
+        </div>
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="plans.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section style="padding: 60px 0 30px; text-align: center;">
+    <div class="container-narrow">
+      <span class="section-badge">Fresh Rotating Menu</span>
+      <h1 class="section-title">
+        A new culinary story <br><em>every single week</em>
+      </h1>
+      <p class="section-subtitle">
+        Curated home-style meals with genuine regional flavors, cooked by verified home kitchens using cold-pressed oils and farm-fresh produce.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Filters & Catalog Section -->
+  <section style="padding: 10px 0 80px;">
+    <div class="container">
+
+      <!-- Pure CSS Filter Radio Controls -->
+      <input type="radio" name="menu-filter" id="tab-all" class="tab-input" checked>
+      <input type="radio" name="menu-filter" id="tab-veg" class="tab-input">
+      <input type="radio" name="menu-filter" id="tab-nonveg" class="tab-input">
+      <input type="radio" name="menu-filter" id="tab-special" class="tab-input">
+      <input type="radio" name="menu-filter" id="tab-lunch" class="tab-input">
+      <input type="radio" name="menu-filter" id="tab-dinner" class="tab-input">
+
+      <div class="tab-controls">
+        <label for="tab-all" class="tab-pill">All Dishes</label>
+        <label for="tab-veg" class="tab-pill">Pure Veg</label>
+        <label for="tab-nonveg" class="tab-pill">Non-Veg</label>
+        <label for="tab-special" class="tab-pill">Chef's Special</label>
+        <label for="tab-lunch" class="tab-pill">Lunch Only</label>
+        <label for="tab-dinner" class="tab-pill">Dinner Only</label>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="tab-content-area">
+
+        <!-- ALL DISHES PANEL -->
+        <div id="panel-all" class="tab-panel">
+          <div class="grid-3">
+            
+            <!-- Dish 1: Paneer Tikka Thali -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/paneer-tikka.png" alt="Homestyle Paneer Tikka Thali">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Paneer Tikka Homestyle Thali</h3>
+                <p class="dish-desc">
+                  Marinated cottage cheese cubes in light home spices, slow-simmered yellow moong dal tadka, seasonal bhindi masala, jeera rice, and 3 soft rotis.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>620</strong> kcal</span>
+                  <span>💪 <strong>28g</strong> protein</span>
+                  <span>🌾 <strong>74g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹85 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 2: Rajma Chawal Bowl -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/rajma-rice.png" alt="Dilli Rajma Chawal Bowl">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dilli-Style Rajma Chawal</h3>
+                <p class="dish-desc">
+                  Slow-cooked red kidney beans in roasted onion-tomato gravy, aromatic long-grain jeera basmati rice, accompanied by crunchy cucumber-onion kachumber.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>540</strong> kcal</span>
+                  <span>💪 <strong>21g</strong> protein</span>
+                  <span>🌾 <strong>82g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹75 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 3: Gujarati Thali -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/gujarati-thali.png" alt="Kathiyawadi Gujarati Thali">
+                <span class="dish-badge special">Regional Special</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Kathiyawadi Gujarati Thali</h3>
+                <p class="dish-desc">
+                  Authentic sweet-sour Gujarati toor dal, ringna no olo (roasted brinjal bharta), crispy fafda bites, 4 phulkas, steamed rice, and homemade curd.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>590</strong> kcal</span>
+                  <span>💪 <strong>19g</strong> protein</span>
+                  <span>🌾 <strong>78g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹95 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 4: Veg Dum Biryani -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/veg-biryani.png" alt="Hyderabadi Veg Dum Biryani">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Hyderabadi Veg Dum Biryani</h3>
+                <p class="dish-desc">
+                  Layers of fragrant aged basmati rice cooked with fresh seasonal vegetables, mint, caramelized onions and saffron, served with cucumber burani raita.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>575</strong> kcal</span>
+                  <span>💪 <strong>16g</strong> protein</span>
+                  <span>🌾 <strong>84g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹90 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 5: Dal Tadka Thali -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/dal-tadka.png" alt="Dhaba Yellow Dal Tadka">
+                <span class="dish-badge veg">Everyday Classic</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dhaba Dal Tadka Combo</h3>
+                <p class="dish-desc">
+                  Double-tempered yellow toor dal with crushed garlic, whole red chilies and desi ghee, jeera aloo dry sabzi, steamed rice, and 3 tawa rotis.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>510</strong> kcal</span>
+                  <span>💪 <strong>22g</strong> protein</span>
+                  <span>🌾 <strong>70g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹80 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Dish 6: Shahi Paneer Feast -->
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/special-thali.png" alt="Shahi Paneer Deluxe Thali">
+                <span class="dish-badge special">Chef's Signature</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Shahi Paneer Deluxe Thali</h3>
+                <p class="dish-desc">
+                  Creamy mild cashew-tomato shahi paneer, dal makhani slow cooked over charcoal, peas pulao, 2 butter phulkas, and fresh gulab jamun sweet.
+                </p>
+                <div class="dish-nutrition">
+                  <span>🔥 <strong>680</strong> kcal</span>
+                  <span>💪 <strong>26g</strong> protein</span>
+                  <span>🌾 <strong>79g</strong> carbs</span>
+                </div>
+                <div class="dish-footer">
+                  <span class="dish-price">₹110 <small style="font-size: 0.75rem; color: var(--color-text-light);">/ in plan</small></span>
+                  <a href="build-week.html" class="btn btn-outline btn-sm">Schedule Meal →</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- VEG PANEL -->
+        <div id="panel-veg" class="tab-panel">
+          <div class="grid-3">
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/paneer-tikka.png" alt="Paneer Tikka Thali">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Paneer Tikka Homestyle Thali</h3>
+                <p class="dish-desc">Cottage cheese cubes with yellow dal tadka, jeera rice, and 3 soft rotis.</p>
+                <div class="dish-footer"><span class="dish-price">₹85</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/rajma-rice.png" alt="Rajma Chawal">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dilli-Style Rajma Chawal</h3>
+                <p class="dish-desc">Slow-cooked red kidney beans, basmati rice, cucumber kachumber.</p>
+                <div class="dish-footer"><span class="dish-price">₹75</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/dal-tadka.png" alt="Dal Tadka Thali">
+                <span class="dish-badge veg">Pure Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dhaba Dal Tadka Combo</h3>
+                <p class="dish-desc">Double-tempered yellow toor dal, jeera aloo, steamed rice, 3 tawa rotis.</p>
+                <div class="dish-footer"><span class="dish-price">₹80</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- NON-VEG PANEL -->
+        <div id="panel-nonveg" class="tab-panel">
+          <div class="grid-3">
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/special-thali.png" alt="Homestyle Chicken Curry Thali">
+                <span class="dish-badge" style="background: #991B1B;">Non-Veg</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Homestyle Chicken Curry Thali</h3>
+                <p class="dish-desc">
+                  Tender farm chicken in homestyle onion-ginger gravy, yellow dal, steamed jeera rice, and 3 whole wheat rotis.
+                </p>
+                <div class="dish-nutrition"><span>🔥 640 kcal</span><span>💪 38g protein</span></div>
+                <div class="dish-footer"><span class="dish-price">₹120</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/thali.png" alt="Egg Curry Classic Thali">
+                <span class="dish-badge" style="background: #991B1B;">Eggitarian</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dhaba Egg Curry Special</h3>
+                <p class="dish-desc">
+                  Two hard-boiled farm eggs simmered in rich Punjabi tomato gravy, aromatic rice, and 3 tawa rotis.
+                </p>
+                <div class="dish-nutrition"><span>🔥 520 kcal</span><span>💪 24g protein</span></div>
+                <div class="dish-footer"><span class="dish-price">₹95</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SPECIALS PANEL -->
+        <div id="panel-special" class="tab-panel">
+          <div class="grid-3">
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/special-thali.png" alt="Shahi Paneer Deluxe Thali">
+                <span class="dish-badge special">Chef's Signature</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Shahi Paneer Deluxe Thali</h3>
+                <p class="dish-desc">Creamy mild cashew-tomato shahi paneer, dal makhani, peas pulao, gulab jamun.</p>
+                <div class="dish-footer"><span class="dish-price">₹110</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/gujarati-thali.png" alt="Kathiyawadi Special">
+                <span class="dish-badge special">Regional Special</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Kathiyawadi Gujarati Thali</h3>
+                <p class="dish-desc">Sweet-sour Gujarati toor dal, ringna no olo, fafda, 4 phulkas, rice.</p>
+                <div class="dish-footer"><span class="dish-price">₹95</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- LUNCH PANEL -->
+        <div id="panel-lunch" class="tab-panel">
+          <div class="grid-3">
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/rajma-rice.png" alt="Rajma Rice">
+                <span class="dish-badge veg">Lunch Classic</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dilli-Style Rajma Chawal</h3>
+                <p class="dish-desc">Light yet energizing lunch with steamed jeera rice and spiced rajma.</p>
+                <div class="dish-footer"><span class="dish-price">₹75</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/paneer-tikka.png" alt="Paneer Tikka Thali">
+                <span class="dish-badge veg">Lunch Favorite</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Paneer Tikka Homestyle Thali</h3>
+                <p class="dish-desc">High protein balanced meal delivered hot between 12:30 PM – 2:00 PM.</p>
+                <div class="dish-footer"><span class="dish-price">₹85</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DINNER PANEL -->
+        <div id="panel-dinner" class="tab-panel">
+          <div class="grid-3">
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/dal-tadka.png" alt="Dal Tadka">
+                <span class="dish-badge veg">Comfort Dinner</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Dhaba Dal Tadka Combo</h3>
+                <p class="dish-desc">Light, easily digestible dinner with yellow dal and soft phulkas.</p>
+                <div class="dish-footer"><span class="dish-price">₹80</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+            <div class="dish-card">
+              <div class="dish-img-wrap">
+                <img src="images/veg-biryani.png" alt="Veg Dum Biryani">
+                <span class="dish-badge special">Dinner Special</span>
+              </div>
+              <div class="dish-content">
+                <h3 class="dish-title">Hyderabadi Veg Dum Biryani</h3>
+                <p class="dish-desc">Comforting evening treat with refreshing cucumber raita.</p>
+                <div class="dish-footer"><span class="dish-price">₹90</span><a href="build-week.html" class="btn btn-outline btn-sm">Select →</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Chef & Quality Commitment Banner -->
+  <section style="background: var(--color-surface); padding: 70px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container grid-3" style="align-items: center;">
+      <div style="text-align: center; padding: 20px;">
+        <div style="font-size: 2.2rem; margin-bottom: 8px;">🌾</div>
+        <h4 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 6px;">Zero Refined Palm Oil</h4>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted);">We exclusively cook with cold-pressed groundnut, mustard, and pure cow desi ghee.</p>
+      </div>
+
+      <div style="text-align: center; padding: 20px;">
+        <div style="font-size: 2.2rem; margin-bottom: 8px;">⏰</div>
+        <h4 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 6px;">Cooked 90 Mins Prior</h4>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted);">Never batch frozen or pre-stored. Meals are packed steaming hot inside insulated dabbas.</p>
+      </div>
+
+      <div style="text-align: center; padding: 20px;">
+        <div style="font-size: 2.2rem; margin-bottom: 8px;">🔄</div>
+        <h4 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 6px;">Swap Dishes Freely</h4>
+        <p style="font-size: 0.88rem; color: var(--color-text-muted);">Don't like what's on the calendar? Swap with any other dish on the menu before 10 PM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>TiffinFlow</h3>
+          <p>Wholesome home-style meals delivered on your terms in reusable stainless-steel tiffins.</p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="weekly-menu.html">Weekly Menu</a></li>
+            <li><a href="plans.html">Plans & Pricing</a></li>
+            <li><a href="build-week.html">Meal Planner</a></li>
+            <li><a href="subscription.html">My Subscription</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Why TiffinFlow</h4>
+          <ul class="footer-links">
+            <li><a href="difference.html">Why TiffinFlow vs Apps</a></li>
+            <li><a href="promise.html">Our Sustainable Promise</a></li>
+            <li><a href="tiffin-journey.html">The Tiffin Journey</a></li>
+            <li><a href="reviews.html">Community Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>Freshly made with care in India</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

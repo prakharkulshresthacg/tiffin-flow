@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plans & Pricing — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Announcement -->
+  <div class="top-announcement">
+    🎉 First Week Trial: Get 10% off with code <strong>FIRSTFLOW</strong> at checkout.
+  </div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link">Weekly Menu</a>
+        <a href="plans.html" class="nav-link active">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-search">
+          <span class="search-icon">🔍</span>
+          <input type="text" placeholder="Search meals...">
+        </div>
+        <a href="login.html" class="btn btn-outline btn-sm">Log In</a>
+        <a href="customize.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Plans Hero -->
+  <section style="padding: 60px 0 30px; text-align: center;">
+    <div class="container-narrow">
+      <span class="section-badge">Flexible Pricing</span>
+      <h1 class="section-title">
+        Choose a plan that <br><em>fits your routine</em>
+      </h1>
+      <p class="section-subtitle">
+        Start simple. Upgrade or adjust anytime as your schedule shifts. No lock-in, zero cancellation penalties.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pure CSS Pricing Radio Tabs -->
+  <section style="padding: 10px 0 80px;">
+    <div class="container">
+      
+      <!-- Radio Inputs for Pricing Toggle -->
+      <input type="radio" name="billing-cycle" id="tab-weekly" class="tab-input" checked>
+      <input type="radio" name="billing-cycle" id="tab-monthly" class="tab-input">
+
+      <div class="tab-controls">
+        <label for="tab-weekly" class="tab-pill">Weekly Cycle (7–15 Days)</label>
+        <label for="tab-monthly" class="tab-pill">Monthly Saver (30 Days) <span style="font-size: 0.72rem; color: #FFAE85; font-weight: 700; margin-left: 4px;">SAVE 15%</span></label>
+      </div>
+
+      <!-- Tab Content Area -->
+      <div class="pricing-tabs-area">
+        
+        <!-- PANEL: WEEKLY (Default) -->
+        <div id="panel-weekly" class="tab-panel">
+          <div class="pricing-grid">
+            
+            <!-- Plan 1: Basic -->
+            <div class="plan-card">
+              <div class="plan-header">
+                <h3 class="plan-name">Basic</h3>
+                <p class="plan-tagline">A simple start to a better everyday meal routine.</p>
+              </div>
+
+              <div class="plan-price-wrap">
+                <span class="plan-price">₹599</span>
+                <span class="plan-period">/ 7-day cycle</span>
+              </div>
+
+              <div class="plan-specs">
+                <span class="spec-badge">7 Meals</span>
+                <span class="spec-badge">1 Meal / Day</span>
+                <span class="spec-badge">7 Days</span>
+              </div>
+
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> Wholesome home-style meals</li>
+                <li><span class="check-icon">✓</span> Veg or Non-Veg preference</li>
+                <li><span class="check-icon">✓</span> Skip up to 2 meals (Wallet credit)</li>
+                <li><span class="check-icon">✓</span> Standard delivery slot</li>
+                <li><span class="check-icon">✓</span> Reusable stainless steel dabba</li>
+              </ul>
+
+              <a href="customize.html?plan=basic" class="btn btn-outline btn-lg" style="width: 100%;">Choose Basic</a>
+            </div>
+
+            <!-- Plan 2: Standard Flex (Featured) -->
+            <div class="plan-card featured">
+              <span class="plan-popular-pill">Most Popular</span>
+              <div class="plan-header">
+                <h3 class="plan-name">Standard Flex</h3>
+                <p class="plan-tagline">Maximum flexibility for your dynamic daily schedule.</p>
+              </div>
+
+              <div class="plan-price-wrap">
+                <span class="plan-price" style="color: var(--color-accent);">₹1,149</span>
+                <span class="plan-period">/ 15-day cycle</span>
+              </div>
+
+              <div class="plan-specs">
+                <span class="spec-badge" style="background: var(--color-accent-light); color: var(--color-accent-dark);">15 Meals</span>
+                <span class="spec-badge">Lunch or Dinner</span>
+                <span class="spec-badge">15 Days</span>
+              </div>
+
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> <strong>Everything in Basic</strong></li>
+                <li><span class="check-icon">✓</span> Unlimited meal swaps (until 10 PM)</li>
+                <li><span class="check-icon">✓</span> Pause plan anytime for travel</li>
+                <li><span class="check-icon">✓</span> Custom add-ons (extra rotis, curd)</li>
+                <li><span class="check-icon">✓</span> Automatic ₹85 credit on skip</li>
+                <li><span class="check-icon">✓</span> Reusable insulated stainless steel dabba</li>
+              </ul>
+
+              <a href="customize.html?plan=standard" class="btn btn-primary btn-lg" style="width: 100%;">Choose Standard Flex</a>
+            </div>
+
+            <!-- Plan 3: Premium -->
+            <div class="plan-card">
+              <div class="plan-header">
+                <h3 class="plan-name">Premium Feast</h3>
+                <p class="plan-tagline">The complete chef-curated TiffinFlow dining experience.</p>
+              </div>
+
+              <div class="plan-price-wrap">
+                <span class="plan-price">₹1,999</span>
+                <span class="plan-period">/ 15-day cycle</span>
+              </div>
+
+              <div class="plan-specs">
+                <span class="spec-badge">30 Meals</span>
+                <span class="spec-badge">Lunch + Dinner</span>
+                <span class="spec-badge">15 Days</span>
+              </div>
+
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> <strong>Everything in Standard</strong></li>
+                <li><span class="check-icon">✓</span> Both Lunch & Dinner covered</li>
+                <li><span class="check-icon">✓</span> Free sweet / dessert with weekend feasts</li>
+                <li><span class="check-icon">✓</span> Priority delivery window booking</li>
+                <li><span class="check-icon">✓</span> Unlimited pause & cycle extension</li>
+                <li><span class="check-icon">✓</span> Dedicated kitchen support manager</li>
+              </ul>
+
+              <a href="customize.html?plan=premium" class="btn btn-outline btn-lg" style="width: 100%;">Choose Premium</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- PANEL: MONTHLY -->
+        <div id="panel-monthly" class="tab-panel">
+          <div class="pricing-grid">
+            
+            <div class="plan-card">
+              <div class="plan-header">
+                <h3 class="plan-name">Basic Monthly</h3>
+                <p class="plan-tagline">Predictable home food month after month.</p>
+              </div>
+              <div class="plan-price-wrap">
+                <span class="plan-price">₹2,199</span>
+                <span class="plan-period">/ 30 days (26 meals)</span>
+              </div>
+              <div class="plan-specs">
+                <span class="spec-badge">26 Meals</span>
+                <span class="spec-badge">Mon–Sat</span>
+                <span class="spec-badge">30 Days</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> Wholesome home-style meals</li>
+                <li><span class="check-icon">✓</span> Skip up to 5 meals with credit</li>
+                <li><span class="check-icon">✓</span> Standard delivery slot</li>
+                <li><span class="check-icon">✓</span> Reusable steel dabbas</li>
+              </ul>
+              <a href="customize.html?plan=basic-monthly" class="btn btn-outline btn-lg" style="width: 100%;">Choose Basic Monthly</a>
+            </div>
+
+            <div class="plan-card featured">
+              <span class="plan-popular-pill">Best Value</span>
+              <div class="plan-header">
+                <h3 class="plan-name">Standard Monthly Flex</h3>
+                <p class="plan-tagline">Complete freedom, locked-in discount pricing.</p>
+              </div>
+              <div class="plan-price-wrap">
+                <span class="plan-price" style="color: var(--color-accent);">₹3,999</span>
+                <span class="plan-period">/ 30 days (45 meals)</span>
+              </div>
+              <div class="plan-specs">
+                <span class="spec-badge" style="background: var(--color-accent-light); color: var(--color-accent-dark);">45 Meals</span>
+                <span class="spec-badge">Lunch + Flexible Dinners</span>
+                <span class="spec-badge">30 Days</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> <strong>Everything in Standard Weekly</strong></li>
+                <li><span class="check-icon">✓</span> Unlimited dish swapping</li>
+                <li><span class="check-icon">✓</span> Pause up to 10 days without expiry</li>
+                <li><span class="check-icon">✓</span> Instant ₹85 wallet cashback on skipped meals</li>
+                <li><span class="check-icon">✓</span> Complimentary monthly seasonal sweet treat</li>
+              </ul>
+              <a href="customize.html?plan=standard-monthly" class="btn btn-primary btn-lg" style="width: 100%;">Choose Standard Monthly</a>
+            </div>
+
+            <div class="plan-card">
+              <div class="plan-header">
+                <h3 class="plan-name">Premium Monthly All-In</h3>
+                <p class="plan-tagline">Never cook, never worry about meal deliveries again.</p>
+              </div>
+              <div class="plan-price-wrap">
+                <span class="plan-price">₹6,999</span>
+                <span class="plan-period">/ 30 days (60 meals)</span>
+              </div>
+              <div class="plan-specs">
+                <span class="spec-badge">60 Meals</span>
+                <span class="spec-badge">Lunch + Dinner Daily</span>
+                <span class="spec-badge">30 Days</span>
+              </div>
+              <ul class="plan-features">
+                <li><span class="check-icon">✓</span> <strong>All 60 meals covered</strong></li>
+                <li><span class="check-icon">✓</span> Weekend specials included</li>
+                <li><span class="check-icon">✓</span> Free add-ons package</li>
+                <li><span class="check-icon">✓</span> Priority delivery guarantee</li>
+              </ul>
+              <a href="customize.html?plan=premium-monthly" class="btn btn-outline btn-lg" style="width: 100%;">Choose Premium Monthly</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Matrix Table -->
+  <section style="background: var(--color-surface); padding: 80px 0; border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+    <div class="container">
+      <div class="text-center" style="margin-bottom: 40px;">
+        <span class="section-badge">Compare Plans</span>
+        <h2 class="section-title">Everything, <em>side by side</em></h2>
+        <p class="section-subtitle">Find the exact level of meal variety and flexibility that aligns with your life.</p>
+      </div>
+
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 34%;">Feature</th>
+              <th style="width: 22%;">Basic (₹599)</th>
+              <th style="width: 22%;" class="highlight-col">Standard Flex (₹1,149) ⭐</th>
+              <th style="width: 22%;">Premium (₹1,999)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Number of Meals</strong></td>
+              <td>7 Meals</td>
+              <td class="highlight-col"><strong>15 Meals</strong></td>
+              <td>30 Meals</td>
+            </tr>
+            <tr>
+              <td><strong>Meal Slot Selection</strong></td>
+              <td>Lunch or Dinner</td>
+              <td class="highlight-col">Lunch or Dinner (Swappable)</td>
+              <td>Both Lunch & Dinner</td>
+            </tr>
+            <tr>
+              <td><strong>Dietary Choices (Veg / Non-Veg / Jain)</strong></td>
+              <td><span class="icon-check">✓ Yes</span></td>
+              <td class="highlight-col"><span class="icon-check">✓ Yes</span></td>
+              <td><span class="icon-check">✓ Yes</span></td>
+            </tr>
+            <tr>
+              <td><strong>Dish Swapping Freedom</strong></td>
+              <td>Basic (1 dish/wk)</td>
+              <td class="highlight-col"><strong><span class="icon-check">✓ Unlimited swaps</span></strong></td>
+              <td><strong><span class="icon-check">✓ Priority swaps</span></strong></td>
+            </tr>
+            <tr>
+              <td><strong>Skip Meals with ₹85 Wallet Credit</strong></td>
+              <td>Up to 2 meals</td>
+              <td class="highlight-col"><strong><span class="icon-check">✓ Unlimited</span></strong></td>
+              <td><strong><span class="icon-check">✓ Unlimited</span></strong></td>
+            </tr>
+            <tr>
+              <td><strong>Pause Subscription (Travel)</strong></td>
+              <td><span class="icon-cross">— Not available</span></td>
+              <td class="highlight-col"><span class="icon-check">✓ Up to 10 days</span></td>
+              <td><span class="icon-check">✓ Up to 20 days</span></td>
+            </tr>
+            <tr>
+              <td><strong>Reusable Stainless Steel Dabba</strong></td>
+              <td><span class="icon-check">✓ Included</span></td>
+              <td class="highlight-col"><span class="icon-check">✓ Included</span></td>
+              <td><span class="icon-check">✓ Included</span></td>
+            </tr>
+            <tr>
+              <td><strong>Weekend Special Delights</strong></td>
+              <td>Standard menu</td>
+              <td class="highlight-col">Rotational special</td>
+              <td><strong><span class="icon-check">✓ Free Chef Special</span></strong></td>
+            </tr>
+            <tr>
+              <td><strong>Delivery Charge</strong></td>
+              <td><strong>FREE</strong></td>
+              <td class="highlight-col"><strong>FREE</strong></td>
+              <td><strong>FREE</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans FAQ Accordion -->
+  <section style="padding: 80px 0;">
+    <div class="container-narrow">
+      <div class="text-center" style="margin-bottom: 40px;">
+        <span class="section-badge">Common Questions</span>
+        <h2 class="section-title">Frequently asked <em>questions</em></h2>
+        <p class="section-subtitle">Got questions about how subscriptions, dabba deposits, or cancellations work?</p>
+      </div>
+
+      <div class="faq-accordion">
+        <details class="faq-item" open>
+          <summary class="faq-summary">Can I skip meals if my college or work schedule changes?</summary>
+          <div class="faq-content">
+            Yes! You can skip any upcoming lunch or dinner anytime before 10:00 PM the night prior. When you skip a meal, ₹85 is credited instantly to your TiffinFlow Wallet, which automatically deducts from your next billing cycle.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">How does the reusable stainless-steel dabba deposit work?</summary>
+          <div class="faq-content">
+            We require a one-time refundable security deposit of ₹200 for your pair of food-grade stainless steel dabbas. When your delivery arrives, our delivery partner collects the clean, empty dabba from the previous day. If you cancel your subscription, the deposit is 100% refunded.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">Can I pause my subscription when going home for holidays?</summary>
+          <div class="faq-content">
+            Absolutely! In the Standard Flex and Premium plans, you can pause your delivery calendar for up to 10 to 20 consecutive days. Your remaining meal balance remains frozen and resumes the day you return.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">Can I change my dietary preference midway through the plan?</summary>
+          <div class="faq-content">
+            Yes, you can toggle between Pure Veg, Non-Veg, or Jain meal options for any specific day in your Smart Weekly Meal Planner with a single click.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-summary">Are there any hidden delivery or handling charges?</summary>
+          <div class="faq-content">
+            None at all. Delivery is 100% free across all our operating cluster zones in Bengaluru, Delhi-NCR, Mumbai, and Pune.
+          </div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>TiffinFlow</h3>
+          <p>
+            Wholesome home-style meals delivered on your terms in reusable stainless-steel tiffins.
+          </p>
+        </div>
+        <div>
+          <h4 class="footer-heading">Product</h4>
+          <ul class="footer-links">
+            <li><a href="weekly-menu.html">Weekly Menu</a></li>
+            <li><a href="plans.html">Plans & Pricing</a></li>
+            <li><a href="build-week.html">Meal Planner</a></li>
+            <li><a href="subscription.html">My Subscription</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Why TiffinFlow</h4>
+          <ul class="footer-links">
+            <li><a href="difference.html">Why TiffinFlow vs Apps</a></li>
+            <li><a href="promise.html">Our Sustainable Promise</a></li>
+            <li><a href="tiffin-journey.html">The Tiffin Journey</a></li>
+            <li><a href="reviews.html">Community Reviews</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-heading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Create Account</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>Freshly made with care in India</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

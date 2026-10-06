@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize Your Plan — TiffinFlow</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="logo-icon">TF</span>
+        <span>Tiffin<span class="logo-accent">Flow</span></span>
+      </a>
+
+      <!-- Mobile Nav Checkbox -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="weekly-menu.html" class="nav-link">Weekly Menu</a>
+        <a href="plans.html" class="nav-link active">Plans</a>
+        <a href="build-week.html" class="nav-link">Meal Planner</a>
+        <a href="subscription.html" class="nav-link">My Subscription</a>
+        <a href="difference.html" class="nav-link">Why Us</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="plans.html" class="btn btn-ghost btn-sm">← Back to Plans</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Multi-Step Stepper -->
+  <div class="container">
+    <div class="stepper-nav">
+      <div class="stepper-step completed">
+        <div class="stepper-num">✓</div>
+        <span>Select Plan</span>
+      </div>
+      <div class="stepper-line completed"></div>
+      <div class="stepper-step active">
+        <div class="stepper-num">2</div>
+        <span>Customize</span>
+      </div>
+      <div class="stepper-line"></div>
+      <div class="stepper-step">
+        <div class="stepper-num">3</div>
+        <span>Checkout</span>
+      </div>
+      <div class="stepper-line"></div>
+      <div class="stepper-step">
+        <div class="stepper-num">4</div>
+        <span>Confirmation</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Customize Main Content: 2-Column Split -->
+  <main class="container" style="padding-bottom: 80px;">
+    <div class="split-layout-2">
+      
+      <!-- Left Column: Customization Controls -->
+      <div>
+        <div style="margin-bottom: 30px;">
+          <span class="section-badge">Step 2 of 4</span>
+          <h1 class="section-title">Customize your <em>Standard Flex Plan</em></h1>
+          <p class="section-subtitle">
+            Configure dietary preferences, daily delivery slots, and recurring add-ons. You can modify these anytime later.
+          </p>
+        </div>
+
+        <form action="checkout.html" method="get">
+          
+          <!-- 1. Dietary Preference -->
+          <div class="card" style="margin-bottom: 24px; padding: 26px;">
+            <h3 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 12px;">
+              1. Dietary Preference
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 18px;">
+              Choose your primary kitchen baseline. You can still swap individual days later.
+            </p>
+
+            <div class="chip-group">
+              <div class="chip-option">
+                <input type="radio" name="diet" id="diet-veg" checked>
+                <label for="diet-veg">🌱 Pure Vegetarian</label>
+              </div>
+              <div class="chip-option">
+                <input type="radio" name="diet" id="diet-nonveg">
+                <label for="diet-nonveg">🍗 Non-Vegetarian</label>
+              </div>
+              <div class="chip-option">
+                <input type="radio" name="diet" id="diet-jain">
+                <label for="diet-jain">🌿 Jain (No Onion/Garlic)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Meal Slot -->
+          <div class="card" style="margin-bottom: 24px; padding: 26px;">
+            <h3 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 12px;">
+              2. Delivery Slot
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 18px;">
+              When should our delivery partners bring your warm tiffin?
+            </p>
+
+            <div class="chip-group">
+              <div class="chip-option">
+                <input type="radio" name="slot" id="slot-lunch" checked>
+                <label for="slot-lunch">☀️ Lunch (12:30 PM – 2:00 PM)</label>
+              </div>
+              <div class="chip-option">
+                <input type="radio" name="slot" id="slot-dinner">
+                <label for="slot-dinner">🌙 Dinner (7:30 PM – 9:00 PM)</label>
+              </div>
+              <div class="chip-option">
+                <input type="radio" name="slot" id="slot-both">
+                <label for="slot-both">🍽️ Both (Lunch & Dinner)</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Delivery Frequency & Start Date -->
+          <div class="card" style="margin-bottom: 24px; padding: 26px;">
+            <h3 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 12px;">
+              3. Schedule & Start Date
+            </h3>
+
+            <div class="grid-2" style="gap: 20px; margin-top: 14px;">
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="start-date">First Delivery Date</label>
+                <input type="date" id="start-date" class="form-input" value="2026-10-07">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0;">
+                <label class="form-label" for="frequency">Delivery Days</label>
+                <select id="frequency" class="form-select">
+                  <option selected>All 7 Days (Mon – Sun)</option>
+                  <option>Weekdays Only (Mon – Fri)</option>
+                  <option>Custom Selected Days</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Optional Add-ons -->
+          <div class="card" style="margin-bottom: 24px; padding: 26px;">
+            <h3 style="font-family: var(--font-serif-heading); font-size: 1.2rem; color: var(--color-primary-dark); margin-bottom: 12px;">
+              4. Delicious Add-ons
+            </h3>
+            <p style="font-size: 0.88rem; color: var(--color-text-muted); margin-bottom: 18px;">
+              Delivered alongside your main meal in separate stainless-steel containers.
+            </p>
+
+            <div style="display: flex; flex-direction: column; gap: 14px;">
+              <div class="chip-option" style="width: 100%;">
+                <input type="checkbox" id="addon-roti" checked>
+                <label for="addon-roti" style="justify-content: space-between; border-radius: var(--radius-md); padding: 14px 18px;">
+                  <div>
+                    <strong>2× Extra Tawa Rotis</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-text-light); font-weight: 400;">Soft whole-wheat, lightly brushed with ghee</div>
+                  </div>
+                  <span style="color: var(--color-accent); font-weight: 700;">+₹60 / cycle</span>
+                </label>
+              </div>
+
+              <div class="chip-option" style="width: 100%;">
+                <input type="checkbox" id="addon-curd" checked>
+                <label for="addon-curd" style="justify-content: space-between; border-radius: var(--radius-md); padding: 14px 18px;">
+                  <div>
+                    <strong>1× Homemade Thick Curd (100g)</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-text-light); font-weight: 400;">Naturally set farm fresh buffalo curd</div>
+                  </div>
+                  <span style="color: var(--color-accent); font-weight: 700;">+₹75 / cycle</span>
+                </label>
+              </div>
+
+              <div class="chip-option" style="width: 100%;">
+                <input type="checkbox" id="addon-salad">
+                <label for="addon-salad" style="justify-content: space-between; border-radius: var(--radius-md); padding: 14px 18px;">
+                  <div>
+                    <strong>1× Crunchy Spiced Salad Bowl</strong>
+                    <div style="font-size: 0.78rem; color: var(--color-text-light); font-weight: 400;">Cucumber, carrot, beetroot with lemon dressing</div>
+                  </div>
+                  <span style="color: var(--color-accent); font-weight: 700;">+₹110 / cycle</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Stainless Steel Dabba System -->
+          <div class="card" style="margin-bottom: 30px; padding: 26px; background: var(--color-primary-subtle); border-color: rgba(23, 63, 53, 0.15);">
+            <div style="display: flex; gap: 16px; align-items: flex-start;">
+              <div style="font-size: 2rem;">🍱</div>
+              <div>
+                <h4 style="font-family: var(--font-serif-heading); font-size: 1.15rem; color: var(--color-primary-dark); margin-bottom: 4px;">
+                  Reusable Stainless Steel Dabba Deposit
+                </h4>
+                <p style="font-size: 0.88rem; color: var(--color-primary-light); line-height: 1.5; margin-bottom: 12px;">
+                  A one-time refundable security deposit of <strong>₹200</strong> is added to issue your pair of sanitized stainless-steel dabbas. 100% refunded when you end your subscription.
+                </p>
+                <span style="background: #FFFFFF; color: var(--color-primary); font-size: 0.78rem; font-weight: 700; padding: 4px 10px; border-radius: var(--radius-pill); border: 1px solid var(--color-border);">
+                  🔒 100% Refundable Security Deposit
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+            Continue to Checkout (Step 3) →
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Column: Sticky Live Order Summary -->
+      <div style="position: sticky; top: 100px;">
+        <div class="card" style="padding: 30px; box-shadow: var(--shadow-md);">
+          <h3 style="font-family: var(--font-serif-heading); font-size: 1.4rem; color: var(--color-primary-dark); margin-bottom: 20px; padding-bottom: 14px; border-bottom: 1px solid var(--color-border);">
+            Plan Summary
+          </h3>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.95rem;">
+            <span>Standard Flex Plan (15 Meals)</span>
+            <span style="font-weight: 700; color: var(--color-text-main);">₹1,049</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; color: var(--color-text-muted);">
+            <span>Extra Rotis (×2 per meal)</span>
+            <span>+₹60</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 12px; font-size: 0.9rem; color: var(--color-text-muted);">
+            <span>Homemade Curd (×1 per meal)</span>
+            <span>+₹75</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9rem; color: var(--color-text-muted);">
+            <span>Steel Dabba Deposit (Refundable)</span>
+            <span>+₹200</span>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; margin-bottom: 16px; font-size: 0.9rem; color: var(--color-success); font-weight: 600;">
+            <span>Doorstep Cluster Delivery</span>
+            <span>FREE</span>
+          </div>
+
+          <div style="border-top: 2px dashed var(--color-border); padding-top: 18px; margin-top: 14px; display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 24px;">
+            <span style="font-size: 1.1rem; font-weight: 700; color: var(--color-primary-dark);">Total Payable</span>
+            <span style="font-size: 2rem; font-weight: 800; color: var(--color-accent); font-family: var(--font-accent);">₹1,384</span>
+          </div>
+
+          <div style="background: var(--color-surface-muted); padding: 14px; border-radius: var(--radius-sm); margin-bottom: 24px; font-size: 0.85rem; color: var(--color-text-muted); line-height: 1.5;">
+            💡 <strong>Did you know?</strong> Every meal you skip refunds <strong>₹85</strong> instantly to your TiffinFlow Wallet for future meals.
+          </div>
+
+          <a href="checkout.html" class="btn btn-primary btn-lg" style="width: 100%;">
+            Proceed to Checkout →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-bottom" style="border: none; padding-top: 0;">
+        <div>© 2026 TiffinFlow Technologies Pvt Ltd. All rights reserved.</div>
+        <div>Need assistance? Call us at +91 98765 43210</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

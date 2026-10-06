@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - TiffinFlow Tablet</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .checkout-tablet-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    .pay-tablet-card {
+      border: 1.5px solid var(--border-color);
+      border-radius: 14px;
+      padding: 16px 20px;
+      background: var(--white);
+      margin-bottom: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .pay-tablet-card:hover, .pay-tablet-card.active {
+      border-color: var(--accent-orange);
+    }
+  </style>
+</head>
+<body>
+  <div class="tablet-container">
+    <!-- Header -->
+    <header class="tablet-header">
+      <a href="customize.html" class="brand-logo">
+        <span class="brand-icon">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+          </svg>
+        </span>
+        <span>Tiffin<span class="accent-flow">Flow</span></span>
+      </a>
+
+      <div style="font-size: 13px; font-weight: 700; color: var(--primary-green); display: flex; align-items: center; gap: 6px;">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+        <span>100% Encrypted Checkout</span>
+      </div>
+
+      <a href="customize.html" class="btn btn-sm btn-secondary">Back</a>
+    </header>
+
+    <!-- Main Content -->
+    <main class="tablet-content">
+      <div style="margin-bottom: 24px;">
+        <span class="eyebrow">SECURE CHECKOUT</span>
+        <h1 class="page-title">Almost there</h1>
+        <p class="page-subtitle" style="margin-bottom: 0;">Review your subscription details and select payment method.</p>
+      </div>
+
+      <div class="checkout-tablet-grid">
+        <!-- Left Column: Details & Payment -->
+        <div>
+          <!-- Delivery Address -->
+          <div class="card" style="margin-bottom: 18px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <span class="eyebrow" style="color: var(--primary-green);">DELIVERY ADDRESS</span>
+              <a href="customize.html" style="font-size: 12px; font-weight: 700; color: var(--accent-orange);">Change Address</a>
+            </div>
+            <div style="font-size: 15px; font-weight: 700; color: var(--text-dark);">Prakhar Saxena • +91 98765 43210</div>
+            <p style="font-size: 13px; color: var(--text-muted); margin-top: 4px; line-height: 1.5;">
+              Flat 402, Green Glen Layout, Bellandur, Bengaluru, Karnataka - 560103
+            </p>
+          </div>
+
+          <!-- Payment Methods -->
+          <div class="card" style="margin-bottom: 0;">
+            <label class="form-label" style="margin-bottom: 14px;">Select Payment Option</label>
+
+            <label class="pay-tablet-card active">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <input type="radio" name="pay_opt" checked style="accent-color: var(--accent-orange); width: 18px; height: 18px;">
+                <div>
+                  <strong style="color: var(--primary-green); font-size: 14px; display: block;">UPI (Instant Auto-Setup)</strong>
+                  <span style="font-size: 12px; color: var(--text-muted);">Google Pay, PhonePe, Paytm, BHIM</span>
+                </div>
+              </div>
+              <span class="badge badge-green">Zero Fee</span>
+            </label>
+
+            <label class="pay-tablet-card">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <input type="radio" name="pay_opt" style="accent-color: var(--accent-orange); width: 18px; height: 18px;">
+                <div>
+                  <strong style="color: var(--primary-green); font-size: 14px; display: block;">Credit / Debit Card</strong>
+                  <span style="font-size: 12px; color: var(--text-muted);">Visa, MasterCard, RuPay</span>
+                </div>
+              </div>
+            </label>
+
+            <label class="pay-tablet-card">
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <input type="radio" name="pay_opt" style="accent-color: var(--accent-orange); width: 18px; height: 18px;">
+                <div>
+                  <strong style="color: var(--primary-green); font-size: 14px; display: block;">Cash on First Delivery</strong>
+                  <span style="font-size: 12px; color: var(--text-muted);">Pay the delivery partner upon arrival</span>
+                </div>
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="card card-warm" style="border: 1px solid var(--border-color); position: sticky; top: 100px;">
+          <h3 class="section-title" style="font-size: 18px; margin-bottom: 14px;">Order Summary</h3>
+
+          <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+            <span style="color: var(--text-muted);">Standard Flex Plan (15 meals)</span>
+            <strong>₹1,149</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+            <span style="color: var(--text-muted);">Tiffin Container Deposit (Refundable)</span>
+            <strong>₹150</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+            <span style="color: var(--text-muted);">Delivery Charge</span>
+            <strong style="color: var(--success-green);">FREE</strong>
+          </div>
+          <div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 8px;">
+            <span style="color: var(--accent-orange-dark);">First Order Welcome Promo</span>
+            <strong style="color: var(--accent-orange-dark);">-₹115</strong>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; font-size: 18px; font-weight: 800; color: var(--primary-green); border-top: 1px dashed var(--border-color); padding-top: 14px; margin-top: 12px; margin-bottom: 18px;">
+            <span>Total Payable</span>
+            <span style="color: var(--accent-orange-dark);">₹1,184</span>
+          </div>
+
+          <a href="confirmation.html" class="btn btn-primary" style="width: 100%; margin-bottom: 12px;">Confirm & Subscribe • ₹1,184</a>
+
+          <div style="font-size: 11px; color: var(--text-muted); text-align: center; line-height: 1.4;">
+            By confirming, you agree to TiffinFlow's flexible subscription terms. Cancel anytime with 100% deposit refund.
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
